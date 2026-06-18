@@ -16,5 +16,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/api', intakeRoutes);
 
 app.listen(PORT, () => {
-  console.log(`PSMMC site running at http://localhost:${PORT}`);
+  console.log(`PSC site running at http://localhost:${PORT}`);
 });

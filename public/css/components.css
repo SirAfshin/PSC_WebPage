@@ -89,6 +89,14 @@
 .timeline-step h3{ font-family:var(--sans); font-size:15px; font-weight:700; color:var(--white); margin-bottom:8px; }
 .timeline-step p{ font-size:13.5px; color:#aebbd1; max-width:200px; }
 
+.timeline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  overflow-x: hidden;
+}
+
+
 /* ===================== WHO WE SERVE ===================== */
 .serve-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:36px; }
 .serve-card{ border-top:2px solid var(--royal); padding-top:24px; }

@@ -1,7 +1,7 @@
 {
-  "name": "psmmc-website",
+  "name": "psc-website",
   "version": "1.0.0",
-  "description": "Problem Solving & Mathematical Modeling Center — marketing site + project intake backend",
+  "description": "Problem Solving Center — marketing site + project intake backend",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
