@@ -1,0 +1,91 @@
+/* ===================== RESET ===================== */
+*{ margin:0; padding:0; box-sizing:border-box; }
+
+html{ scroll-behavior:smooth; }
+
+body{
+  font-family:var(--sans);
+  color:var(--ink);
+  background:var(--white);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+
+img,svg{ display:block; max-width:100%; }
+a{ color:inherit; text-decoration:none; }
+ul{ list-style:none; }
+button{ font-family:inherit; cursor:pointer; }
+
+:focus-visible{
+  outline:2px solid var(--gold);
+  outline-offset:3px;
+}
+
+@media (prefers-reduced-motion: reduce){
+  *{ animation:none !important; transition:none !important; scroll-behavior:auto !important; }
+}
+
+/* ===================== LAYOUT PRIMITIVES ===================== */
+.container{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:0 32px;
+}
+
+.eyebrow{
+  font-family:var(--mono);
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:var(--gold);
+}
+.eyebrow.on-light{ color:var(--royal); }
+
+h1,h2,h3{
+  font-family:var(--serif);
+  font-weight:600;
+  line-height:1.15;
+  letter-spacing:-0.01em;
+}
+h2{ font-size:clamp(28px,3.4vw,40px); margin-top:14px; }
+
+.section-head{
+  max-width:680px;
+  margin-bottom:56px;
+}
+.section-head p{
+  color:var(--muted);
+  font-size:17px;
+  margin-top:16px;
+  max-width:600px;
+}
+
+/* ===================== BUTTONS ===================== */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:13px 26px;
+  font-size:14px;
+  font-weight:600;
+  border-radius:2px;
+  border:1px solid transparent;
+  transition:transform .15s ease, background .2s ease, color .2s ease, border-color .2s ease;
+  letter-spacing:0.01em;
+}
+.btn:hover{ transform:translateY(-1px); }
+
+.btn-primary{ background:var(--gold); color:var(--midnight); }
+.btn-primary:hover{ background:var(--gold-soft); }
+
+.btn-ghost-dark{ border-color:rgba(255,255,255,0.35); color:var(--white); }
+.btn-ghost-dark:hover{ border-color:var(--white); }
+
+.btn-ghost-light{ border-color:var(--royal); color:var(--royal); }
+.btn-ghost-light:hover{ background:var(--royal); color:var(--white); }
+
+/* ===================== SCROLL REVEAL UTILITY ===================== */
+.reveal{ opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease; }
+.reveal.in{ opacity:1; transform:translateY(0); }

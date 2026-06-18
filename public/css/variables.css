@@ -1,0 +1,21 @@
+/* ===================== DESIGN TOKENS ===================== */
+:root{
+  --midnight:#0B1F3A;
+  --midnight-soft:#13294d;
+  --royal:#1F4E8C;
+  --silver:#D6DCE5;
+  --silver-soft:#EFF2F6;
+  --white:#FFFFFF;
+  --gold:#D4A017;
+  --gold-soft:#e7c463;
+  --ink:#0B1F3A;
+  --muted:#5b6c83;
+  --line:#dde2ea;
+
+  --serif: "Playfair Display", "Georgia", serif;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --mono: "IBM Plex Mono", monospace;
+
+  --maxw: 1180px;
+  --radius: 4px;
+}
