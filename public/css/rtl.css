@@ -1,0 +1,44 @@
+.lang-toggle{
+  background:transparent;
+  border:1px solid rgba(255,255,255,0.18);
+  color:var(--white);
+  padding:10px 14px;
+  border-radius:999px;
+  font-size:13px;
+  font-weight:600;
+  line-height:1;
+  transition:background .2s ease, border-color .2s ease;
+}
+
+.lang-toggle:hover{
+  background:rgba(255,255,255,0.08);
+  border-color:rgba(255,255,255,0.3);
+}
+
+/* RTL mode */
+html[dir="rtl"] body{
+  direction: rtl;
+}
+
+html[dir="rtl"] .nav-row{
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .nav-links{
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .nav-cta{
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .hero-inner{
+  direction: rtl;
+}
+
+html[dir="rtl"] .hero h1,
+html[dir="rtl"] .hero-sub,
+html[dir="rtl"] .section,
+html[dir="rtl"] .nav-links a{
+  text-align: right;
+}
