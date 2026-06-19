@@ -615,6 +615,8 @@
     }
 
     document.body.setAttribute('data-lang', lang);
+
+    document.dispatchEvent(new CustomEvent('psc:langchange', { detail: { lang } }));
   }
 
   function initLanguage() {

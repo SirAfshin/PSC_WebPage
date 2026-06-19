@@ -1,14 +1,17 @@
 {
   "name": "psc-website",
-  "version": "1.0.0",
-  "description": "Problem Solving Center — marketing site + project intake backend",
+  "version": "1.1.0",
+  "description": "Problem Solving Center — marketing site + project intake backend + admin panel",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "hash-password": "node scripts/hash-password.js"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dotenv": "^17.4.2",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "express-session": "^1.18.1"
   }
 }
