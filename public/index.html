@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PSC — Problem Solving Center</title>
-<meta name="description" content="A university-affiliated center that translates complex real-world problems into rigorous mathematical and computational solutions.">
+<title data-i18n="meta.title">PSC — Problem Solving Center</title>
+<meta name="description" data-i18n-content="meta.description" content="A university-affiliated center that translates complex real-world problems into rigorous mathematical and computational solutions.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/variables.css">
 <link rel="stylesheet" href="/css/base.css">
@@ -23,18 +23,16 @@
   <div class="container nav-row">
     <a href="#top" class="wordmark">PS<span>C</span></a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#what-we-do">What We Do</a></li>
-      <li><a href="#how-it-works">How It Works</a></li>
-      <li><a href="#case-studies">Case Studies</a></li>
-      <li><a href="#team">Team</a></li>
-      <li><a href="#submit">Submit a Problem</a></li>
+      <li><a href="#what-we-do" data-i18n="What We Do">What We Do</a></li>
+      <li><a href="#how-it-works" data-i18n="How It Works">How It Works</a></li>
+      <li><a href="#case-studies" data-i18n="Case Studies">Case Studies</a></li>
+      <li><a href="#team" data-i18n="Team">Team</a></li>
+      <li><a href="#submit" data-i18n="Submit a Problem">Submit a Problem</a></li>
     </ul>
     <div class="nav-cta">
       <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch to Persian">فارسی</button>
-      <!-- <button class="lang-toggle" data-lang="en">EN</button>
-      <button class="lang-toggle" data-lang="fa">فارسی</button> -->
-      <a href="#submit" class="btn btn-ghost-dark" style="padding:10px 18px;">Submit a Problem</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+      <a href="#submit" class="btn btn-ghost-dark" style="padding:10px 18px;" data-i18n="Submit a Problem">Submit a Problem</a>
+      <button class="nav-toggle" id="navToggle" data-i18n-aria-label="Toggle menu" aria-label="Toggle menu">☰</button>
     </div>
   </div>
 </nav>
@@ -44,12 +42,12 @@
   <div class="container">
     <div class="hero-inner">
       <div>
-        <p class="eyebrow">University-Affiliated Research Center · Dept. of Mathematics</p>
-        <h1>Turning complex problems into <em>practical</em> solutions.</h1>
-        <p class="hero-sub">We translate difficult, real-world challenges into rigorous mathematical and computational work — then deliver answers people can actually act on.</p>
+        <p class="eyebrow" data-i18n="University-Affiliated Research Center · Dept. of Mathematics">University-Affiliated Research Center · Dept. of Mathematics</p>
+        <h1><span data-i18n="heroTitlePre">Turning complex problems into </span><em data-i18n="heroTitleEm">practical</em><span data-i18n="heroTitlePost"> solutions.</span></h1>
+        <p class="hero-sub" data-i18n="We translate difficult, real-world challenges into rigorous mathematical and computational work — then deliver answers people can actually act on.">We translate difficult, real-world challenges into rigorous mathematical and computational work — then deliver answers people can actually act on.</p>
         <div class="hero-actions">
-          <a href="#submit" class="btn btn-primary">Submit a Problem</a>
-          <a href="#contact" class="btn btn-ghost-dark">Schedule a Consultation</a>
+          <a href="#submit" class="btn btn-primary" data-i18n="Submit a Problem">Submit a Problem</a>
+          <a href="#contact" class="btn btn-ghost-dark" data-i18n="Schedule a Consultation">Schedule a Consultation</a>
         </div>
       </div>
 
@@ -64,22 +62,22 @@
           <circle cx="1110" cy="150" r="5" fill="#D4A017"/>
         </svg>
         <div class="wave-caption-row">
-          <span class="wave-caption is-active">Real-World<br>Challenge</span>
-          <span class="wave-caption">Problem<br>Formulation</span>
-          <span class="wave-caption">Mathematical<br>Model</span>
-          <span class="wave-caption">Analysis &amp;<br>Computation</span>
-          <span class="wave-caption">Actionable<br>Solution</span>
+          <span class="wave-caption is-active" data-i18n="Real-World Challenge">Real-World Challenge</span>
+          <span class="wave-caption" data-i18n="Problem Formulation">Problem Formulation</span>
+          <span class="wave-caption" data-i18n="Mathematical Model">Mathematical Model</span>
+          <span class="wave-caption" data-i18n="Analysis & Computation">Analysis &amp; Computation</span>
+          <span class="wave-caption" data-i18n="Actionable Solution">Actionable Solution</span>
         </div>
       </div>
     </div>
 
     <div class="hero-foot">
-      <span>Optimization</span>
-      <span>Statistics &amp; Data Science</span>
-      <span>Scientific Computing</span>
-      <span>Operations Research</span>
-      <span>Machine Learning</span>
-      <span>Decision Support</span>
+      <span data-i18n="Optimization">Optimization</span>
+      <span data-i18n="Statistics & Data Science">Statistics &amp; Data Science</span>
+      <span data-i18n="Scientific Computing">Scientific Computing</span>
+      <span data-i18n="Operations Research">Operations Research</span>
+      <span data-i18n="Machine Learning">Machine Learning</span>
+      <span data-i18n="Decision Support">Decision Support</span>
     </div>
   </div>
 </header>
@@ -88,28 +86,28 @@
 <section class="section" id="what-we-do">
   <div class="container">
     <div class="section-head">
-      <p class="eyebrow on-light">What We Do</p>
-      <h2>Areas of expertise</h2>
-      <p>A single front door into a wide range of mathematical and computational disciplines — assembled into the right team for each problem.</p>
+      <p class="eyebrow on-light" data-i18n="What We Do">What We Do</p>
+      <h2 data-i18n="Areas of expertise">Areas of expertise</h2>
+      <p data-i18n="A single front door into a wide range of mathematical and computational disciplines — assembled into the right team for each problem.">A single front door into a wide range of mathematical and computational disciplines — assembled into the right team for each problem.</p>
     </div>
   </div>
   <div class="container" style="padding:0;">
     <div class="expertise-grid">
-      <div class="expertise-card"><div class="expertise-mark"></div><h3>Mathematical Modeling</h3><p>Translating real-world systems into precise equations and structures.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3>Optimization</h3><p>Finding the best decision among many feasible options.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3>Operations Research</h3><p>Improving how complex systems and processes run.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3>Statistics &amp; Data Analytics</h3><p>Extracting reliable insight from noisy, real-world data.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3>Scientific Computing</h3><p>Solving large-scale problems with numerical methods and code.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3>Numerical Analysis</h3><p>Ensuring computational solutions stay accurate and stable.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3>Simulation</h3><p>Testing scenarios safely before committing real resources.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3>Forecasting</h3><p>Anticipating demand, risk, and future system behavior.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3>Machine Learning &amp; AI</h3><p>Learning patterns from data to support better decisions.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3>Network Science</h3><p>Understanding connectivity, flow, and structure in complex systems.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3>Decision Support Systems</h3><p>Turning analysis into tools people actually use.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3>Scheduling &amp; Resource Allocation</h3><p>Assigning limited resources where they matter most.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3>Dynamical Systems</h3><p>Modeling how systems evolve and change over time.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3>Financial Mathematics</h3><p>Quantifying risk and value in financial decisions.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3>Industrial Mathematics</h3><p>Applying mathematics directly to industry-scale challenges.</p></div>
+      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Mathematical Modeling">Mathematical Modeling</h3><p data-i18n="Translating real-world systems into precise equations and structures.">Translating real-world systems into precise equations and structures.</p></div>
+      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Optimization">Optimization</h3><p data-i18n="Finding the best decision among many feasible options.">Finding the best decision among many feasible options.</p></div>
+      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Operations Research">Operations Research</h3><p data-i18n="Improving how complex systems and processes run.">Improving how complex systems and processes run.</p></div>
+      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Statistics & Data Analytics">Statistics &amp; Data Analytics</h3><p data-i18n="Extracting reliable insight from noisy, real-world data.">Extracting reliable insight from noisy, real-world data.</p></div>
+      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Scientific Computing">Scientific Computing</h3><p data-i18n="Solving large-scale problems with numerical methods and code.">Solving large-scale problems with numerical methods and code.</p></div>
+      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Numerical Analysis">Numerical Analysis</h3><p data-i18n="Ensuring computational solutions stay accurate and stable.">Ensuring computational solutions stay accurate and stable.</p></div>
+      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Simulation">Simulation</h3><p data-i18n="Testing scenarios safely before committing real resources.">Testing scenarios safely before committing real resources.</p></div>
+      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Forecasting">Forecasting</h3><p data-i18n="Anticipating demand, risk, and future system behavior.">Anticipating demand, risk, and future system behavior.</p></div>
+      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Machine Learning & AI">Machine Learning &amp; AI</h3><p data-i18n="Learning patterns from data to support better decisions.">Learning patterns from data to support better decisions.</p></div>
+      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Network Science">Network Science</h3><p data-i18n="Understanding connectivity, flow, and structure in complex systems.">Understanding connectivity, flow, and structure in complex systems.</p></div>
+      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Decision Support Systems">Decision Support Systems</h3><p data-i18n="Turning analysis into tools people actually use.">Turning analysis into tools people actually use.</p></div>
+      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Scheduling & Resource Allocation">Scheduling &amp; Resource Allocation</h3><p data-i18n="Assigning limited resources where they matter most.">Assigning limited resources where they matter most.</p></div>
+      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Dynamical Systems">Dynamical Systems</h3><p data-i18n="Modeling how systems evolve and change over time.">Modeling how systems evolve and change over time.</p></div>
+      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Financial Mathematics">Financial Mathematics</h3><p data-i18n="Quantifying risk and value in financial decisions.">Quantifying risk and value in financial decisions.</p></div>
+      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Industrial Mathematics">Industrial Mathematics</h3><p data-i18n="Applying mathematics directly to industry-scale challenges.">Applying mathematics directly to industry-scale challenges.</p></div>
     </div>
   </div>
 </section>
@@ -118,18 +116,18 @@
 <section class="section on-midnight" id="how-it-works">
   <div class="container">
     <div class="section-head">
-      <p class="eyebrow">How It Works</p>
-      <h2>From first contact to closeout</h2>
-      <p>A clear, structured path — every problem is examined, classified, scoped, and resolved through the same disciplined process.</p>
+      <p class="eyebrow" data-i18n="How It Works">How It Works</p>
+      <h2 data-i18n="From first contact to closeout">From first contact to closeout</h2>
+      <p data-i18n="A clear, structured path — every problem is examined, classified, scoped, and resolved through the same disciplined process.">A clear, structured path — every problem is examined, classified, scoped, and resolved through the same disciplined process.</p>
     </div>
     <div class="timeline">
-      <div class="timeline-step"><div class="timeline-num">1</div><h3>Submit Request</h3><p>Describe the problem through a short online form.</p></div>
-      <div class="timeline-step"><div class="timeline-num">2</div><h3>Discovery Meeting</h3><p>A 15–30 minute conversation to understand your objectives.</p></div>
-      <div class="timeline-step"><div class="timeline-num">3</div><h3>Triage</h3><p>Classified as a quick consult, short project, long-term collaboration, or referral.</p></div>
-      <div class="timeline-step"><div class="timeline-num">4</div><h3>Scope &amp; Agreement</h3><p>Deliverables, timeline, confidentiality, IP, and data access defined.</p></div>
-      <div class="timeline-step"><div class="timeline-num">5</div><h3>Project Execution</h3><p>An expert team works through the analysis.</p></div>
-      <div class="timeline-step"><div class="timeline-num">6</div><h3>Validation &amp; Handoff</h3><p>Reports, models, software, and recommendations delivered.</p></div>
-      <div class="timeline-step"><div class="timeline-num">7</div><h3>Closeout</h3><p>Feedback gathered, work archived, impact tracked.</p></div>
+      <div class="timeline-step"><div class="timeline-num" data-i18n="1">1</div><h3 data-i18n="Submit Request">Submit Request</h3><p data-i18n="Describe the problem through a short online form.">Describe the problem through a short online form.</p></div>
+      <div class="timeline-step"><div class="timeline-num" data-i18n="2">2</div><h3 data-i18n="Discovery Meeting">Discovery Meeting</h3><p data-i18n="A 15–30 minute conversation to understand your objectives.">A 15–30 minute conversation to understand your objectives.</p></div>
+      <div class="timeline-step"><div class="timeline-num" data-i18n="3">3</div><h3 data-i18n="Triage">Triage</h3><p data-i18n="Classified as a quick consult, short project, long-term collaboration, or referral.">Classified as a quick consult, short project, long-term collaboration, or referral.</p></div>
+      <div class="timeline-step"><div class="timeline-num" data-i18n="4">4</div><h3 data-i18n="Scope & Agreement">Scope &amp; Agreement</h3><p data-i18n="Deliverables, timeline, confidentiality, IP, and data access defined.">Deliverables, timeline, confidentiality, IP, and data access defined.</p></div>
+      <div class="timeline-step"><div class="timeline-num" data-i18n="5">5</div><h3 data-i18n="Project Execution">Project Execution</h3><p data-i18n="An expert team works through the analysis.">An expert team works through the analysis.</p></div>
+      <div class="timeline-step"><div class="timeline-num" data-i18n="6">6</div><h3 data-i18n="Validation & Handoff">Validation &amp; Handoff</h3><p data-i18n="Reports, models, software, and recommendations delivered.">Reports, models, software, and recommendations delivered.</p></div>
+      <div class="timeline-step"><div class="timeline-num" data-i18n="7">7</div><h3 data-i18n="Closeout">Closeout</h3><p data-i18n="Feedback gathered, work archived, impact tracked.">Feedback gathered, work archived, impact tracked.</p></div>
     </div>
   </div>
 </section>
@@ -138,24 +136,24 @@
 <section class="section">
   <div class="container">
     <div class="section-head">
-      <p class="eyebrow on-light">Who We Serve</p>
-      <h2>Built for academia, industry, and government alike</h2>
+      <p class="eyebrow on-light" data-i18n="Who We Serve">Who We Serve</p>
+      <h2 data-i18n="Built for academia, industry, and government alike">Built for academia, industry, and government alike</h2>
     </div>
     <div class="serve-grid">
       <div class="serve-card">
-        <h3>Academic Collaboration</h3>
-        <p>Cross-department partnerships that bring mathematical depth to research already underway.</p>
-        <div class="tag-row"><span class="tag">Faculty</span><span class="tag">Researchers</span><span class="tag">Graduate Students</span><span class="tag">Departments</span></div>
+        <h3 data-i18n="Academic Collaboration">Academic Collaboration</h3>
+        <p data-i18n="Cross-department partnerships that bring mathematical depth to research already underway.">Cross-department partnerships that bring mathematical depth to research already underway.</p>
+        <div class="tag-row"><span class="tag" data-i18n="Faculty">Faculty</span><span class="tag" data-i18n="Researchers">Researchers</span><span class="tag" data-i18n="Graduate Students">Graduate Students</span><span class="tag" data-i18n="Departments">Departments</span></div>
       </div>
       <div class="serve-card">
-        <h3>Industry Partnerships</h3>
-        <p>Applied analysis for operational, strategic, and product challenges.</p>
-        <div class="tag-row"><span class="tag">Companies</span><span class="tag">Startups</span><span class="tag">Manufacturers</span></div>
+        <h3 data-i18n="Industry Partnerships">Industry Partnerships</h3>
+        <p data-i18n="Applied analysis for operational, strategic, and product challenges.">Applied analysis for operational, strategic, and product challenges.</p>
+        <div class="tag-row"><span class="tag" data-i18n="Companies">Companies</span><span class="tag" data-i18n="Startups">Startups</span><span class="tag" data-i18n="Manufacturers">Manufacturers</span></div>
       </div>
       <div class="serve-card">
-        <h3>Government &amp; Public Sector</h3>
-        <p>Evidence-based modeling for public systems, services, and policy questions.</p>
-        <div class="tag-row"><span class="tag">Agencies</span><span class="tag">NGOs</span><span class="tag">Hospitals</span></div>
+        <h3 data-i18n="Government & Public Sector">Government &amp; Public Sector</h3>
+        <p data-i18n="Evidence-based modeling for public systems, services, and policy questions.">Evidence-based modeling for public systems, services, and policy questions.</p>
+        <div class="tag-row"><span class="tag" data-i18n="Agencies">Agencies</span><span class="tag" data-i18n="NGOs">NGOs</span><span class="tag" data-i18n="Hospitals">Hospitals</span></div>
       </div>
     </div>
   </div>
@@ -165,19 +163,19 @@
 <section class="section on-silver">
   <div class="container">
     <div class="section-head">
-      <p class="eyebrow on-light">Example Problems</p>
-      <h2>The kind of questions we take on</h2>
+      <p class="eyebrow on-light" data-i18n="Example Problems">Example Problems</p>
+      <h2 data-i18n="The kind of questions we take on">The kind of questions we take on</h2>
     </div>
     <div class="problem-chips">
-      <div class="problem-chip">Hospital shift scheduling</div>
-      <div class="problem-chip">Transportation optimization</div>
-      <div class="problem-chip">Resource allocation</div>
-      <div class="problem-chip">Demand forecasting</div>
-      <div class="problem-chip">Epidemiological modeling</div>
-      <div class="problem-chip">Environmental simulation</div>
-      <div class="problem-chip">Manufacturing optimization</div>
-      <div class="problem-chip">Financial risk analysis</div>
-      <div class="problem-chip">Research data analysis</div>
+      <div class="problem-chip" data-i18n="Hospital shift scheduling">Hospital shift scheduling</div>
+      <div class="problem-chip" data-i18n="Transportation optimization">Transportation optimization</div>
+      <div class="problem-chip" data-i18n="Resource allocation">Resource allocation</div>
+      <div class="problem-chip" data-i18n="Demand forecasting">Demand forecasting</div>
+      <div class="problem-chip" data-i18n="Epidemiological modeling">Epidemiological modeling</div>
+      <div class="problem-chip" data-i18n="Environmental simulation">Environmental simulation</div>
+      <div class="problem-chip" data-i18n="Manufacturing optimization">Manufacturing optimization</div>
+      <div class="problem-chip" data-i18n="Financial risk analysis">Financial risk analysis</div>
+      <div class="problem-chip" data-i18n="Research data analysis">Research data analysis</div>
     </div>
   </div>
 </section>
@@ -186,40 +184,40 @@
 <section class="section" id="case-studies">
   <div class="container">
     <div class="section-head">
-      <p class="eyebrow on-light">Case Studies</p>
-      <h2>Representative project concepts</h2>
-      <p>The Center is newly established — these are illustrative project types we are built to take on, not a record of completed engagements yet.</p>
+      <p class="eyebrow on-light" data-i18n="Case Studies">Case Studies</p>
+      <h2 data-i18n="Representative project concepts">Representative project concepts</h2>
+      <p data-i18n="The Center is newly established — these are illustrative project types we are built to take on, not a record of completed engagements yet.">The Center is newly established — these are illustrative project types we are built to take on, not a record of completed engagements yet.</p>
     </div>
     <div class="case-grid">
       <div class="case-card">
-        <span class="case-tag">Healthcare</span>
-        <h3>Hospital Scheduling Optimization</h3>
-        <p>Balancing staff availability, shift fairness, and patient coverage using constraint-based optimization.</p>
-        <span class="pill">Concept</span>
+        <span class="case-tag" data-i18n="Healthcare">Healthcare</span>
+        <h3 data-i18n="Hospital Scheduling Optimization">Hospital Scheduling Optimization</h3>
+        <p data-i18n="Balancing staff availability, shift fairness, and patient coverage using constraint-based optimization.">Balancing staff availability, shift fairness, and patient coverage using constraint-based optimization.</p>
+        <span class="pill" data-i18n="Concept">Concept</span>
       </div>
       <div class="case-card">
-        <span class="case-tag">Higher Education</span>
-        <h3>University Timetable Optimization</h3>
-        <p>Generating conflict-free, room-efficient course schedules across departments.</p>
-        <span class="pill">Concept</span>
+        <span class="case-tag" data-i18n="Higher Education">Higher Education</span>
+        <h3 data-i18n="University Timetable Optimization">University Timetable Optimization</h3>
+        <p data-i18n="Generating conflict-free, room-efficient course schedules across departments.">Generating conflict-free, room-efficient course schedules across departments.</p>
+        <span class="pill" data-i18n="Concept">Concept</span>
       </div>
       <div class="case-card">
-        <span class="case-tag">Environment</span>
-        <h3>Water Resource Modeling</h3>
-        <p>Simulating supply, demand, and distribution under varying climate scenarios.</p>
-        <span class="pill">Concept</span>
+        <span class="case-tag" data-i18n="Environment">Environment</span>
+        <h3 data-i18n="Water Resource Modeling">Water Resource Modeling</h3>
+        <p data-i18n="Simulating supply, demand, and distribution under varying climate scenarios.">Simulating supply, demand, and distribution under varying climate scenarios.</p>
+        <span class="pill" data-i18n="Concept">Concept</span>
       </div>
       <div class="case-card">
-        <span class="case-tag">Logistics</span>
-        <h3>Supply Chain Simulation</h3>
-        <p>Stress-testing distribution networks against disruption and demand volatility.</p>
-        <span class="pill">Concept</span>
+        <span class="case-tag" data-i18n="Logistics">Logistics</span>
+        <h3 data-i18n="Supply Chain Simulation">Supply Chain Simulation</h3>
+        <p data-i18n="Stress-testing distribution networks against disruption and demand volatility.">Stress-testing distribution networks against disruption and demand volatility.</p>
+        <span class="pill" data-i18n="Concept">Concept</span>
       </div>
       <div class="case-card">
-        <span class="case-tag">Healthcare · AI</span>
-        <h3>AI for Healthcare</h3>
-        <p>Predictive models supporting triage, diagnosis support, and capacity planning.</p>
-        <span class="pill">Concept</span>
+        <span class="case-tag" data-i18n="Healthcare · AI">Healthcare · AI</span>
+        <h3 data-i18n="AI for Healthcare">AI for Healthcare</h3>
+        <p data-i18n="Predictive models supporting triage, diagnosis support, and capacity planning.">Predictive models supporting triage, diagnosis support, and capacity planning.</p>
+        <span class="pill" data-i18n="Concept">Concept</span>
       </div>
     </div>
   </div>
@@ -229,8 +227,8 @@
 <section class="section on-midnight quote-section">
   <div class="container">
     <blockquote>
-      Behind every healthcare system, transportation network, supply chain, financial market, and scientific discovery lies a mathematical structure waiting to be understood.
-      <cite>We exist to reveal that structure — and turn it into better decisions.</cite>
+      <span data-i18n="Behind every healthcare system, transportation network, supply chain, financial market, and scientific discovery lies a mathematical structure waiting to be understood.">Behind every healthcare system, transportation network, supply chain, financial market, and scientific discovery lies a mathematical structure waiting to be understood.</span>
+      <cite data-i18n="We exist to reveal that structure — and turn it into better decisions.">We exist to reveal that structure — and turn it into better decisions.</cite>
     </blockquote>
   </div>
 </section>
@@ -239,10 +237,10 @@
 <section class="section tight">
   <div class="container">
     <div class="status-row">
-      <div class="status-cell"><div class="dot"></div><span>University Supported</span></div>
-      <div class="status-cell"><div class="dot"></div><span>Interdisciplinary Team</span></div>
-      <div class="status-cell"><div class="dot"></div><span>Research Driven</span></div>
-      <div class="status-cell"><div class="dot"></div><span>Launching 2026</span></div>
+      <div class="status-cell"><div class="dot"></div><span data-i18n="University Supported">University Supported</span></div>
+      <div class="status-cell"><div class="dot"></div><span data-i18n="Interdisciplinary Team">Interdisciplinary Team</span></div>
+      <div class="status-cell"><div class="dot"></div><span data-i18n="Research Driven">Research Driven</span></div>
+      <div class="status-cell"><div class="dot"></div><span data-i18n="Launching 2026">Launching 2026</span></div>
     </div>
   </div>
 </section>
@@ -251,30 +249,30 @@
 <section class="section on-silver" id="team">
   <div class="container">
     <div class="section-head">
-      <p class="eyebrow on-light">Team</p>
-      <h2>Who you'll work with</h2>
-      <p>Names to follow as the Center's roster is finalized — the structure below reflects how every engagement is staffed.</p>
+      <p class="eyebrow on-light" data-i18n="Team">Team</p>
+      <h2 data-i18n="Who you'll work with">Who you'll work with</h2>
+      <p data-i18n="Names to follow as the Center's roster is finalized — the structure below reflects how every engagement is staffed.">Names to follow as the Center's roster is finalized — the structure below reflects how every engagement is staffed.</p>
     </div>
     <div class="team-grid">
       <div class="team-card">
-        <span class="team-role">Director</span>
-        <h3>Name to be announced</h3>
-        <div class="tag-row"><span class="tag">Leadership</span><span class="tag">Strategy</span></div>
+        <span class="team-role" data-i18n="Director">Director</span>
+        <h3 data-i18n="Name to be announced">Name to be announced</h3>
+        <div class="tag-row"><span class="tag" data-i18n="Leadership">Leadership</span><span class="tag" data-i18n="Strategy">Strategy</span></div>
       </div>
       <div class="team-card">
-        <span class="team-role">Faculty Consultants</span>
-        <h3>Roster in formation</h3>
-        <div class="tag-row"><span class="tag">Optimization</span><span class="tag">Statistics</span><span class="tag">Numerical Analysis</span></div>
+        <span class="team-role" data-i18n="Faculty Consultants">Faculty Consultants</span>
+        <h3 data-i18n="Roster in formation">Roster in formation</h3>
+        <div class="tag-row"><span class="tag" data-i18n="Optimization">Optimization</span><span class="tag" data-i18n="Statistics">Statistics</span><span class="tag" data-i18n="Numerical Analysis">Numerical Analysis</span></div>
       </div>
       <div class="team-card">
-        <span class="team-role">Graduate Researchers</span>
-        <h3>Roster in formation</h3>
-        <div class="tag-row"><span class="tag">Computational Math</span><span class="tag">AI</span></div>
+        <span class="team-role" data-i18n="Graduate Researchers">Graduate Researchers</span>
+        <h3 data-i18n="Roster in formation">Roster in formation</h3>
+        <div class="tag-row"><span class="tag" data-i18n="Computational Math">Computational Math</span><span class="tag" data-i18n="AI">AI</span></div>
       </div>
       <div class="team-card">
-        <span class="team-role">Student Fellows</span>
-        <h3>Applications opening soon</h3>
-        <div class="tag-row"><span class="tag">Operations Research</span></div>
+        <span class="team-role" data-i18n="Student Fellows">Student Fellows</span>
+        <h3 data-i18n="Applications opening soon">Applications opening soon</h3>
+        <div class="tag-row"><span class="tag" data-i18n="Operations Research">Operations Research</span></div>
       </div>
     </div>
   </div>
@@ -285,13 +283,13 @@
   <div class="container">
     <div class="form-wrap">
       <div class="form-side">
-        <p class="eyebrow on-light">Submit a Problem</p>
-        <h2>Tell us what you're working on</h2>
-        <p>The most important step toward a solution is understanding the problem correctly. This goes to our intake team — expect a reply within a few business days.</p>
+        <p class="eyebrow on-light" data-i18n="Submit a Problem">Submit a Problem</p>
+        <h2 data-i18n="Tell us what you're working on">Tell us what you're working on</h2>
+        <p data-i18n="The most important step toward a solution is understanding the problem correctly. This goes to our intake team — expect a reply within a few business days.">The most important step toward a solution is understanding the problem correctly. This goes to our intake team — expect a reply within a few business days.</p>
         <ul class="form-list">
-          <li><span>Response time</span><span>2–3 business days</span></li>
-          <li><span>Discovery call</span><span>15–30 minutes</span></li>
-          <li><span>Confidentiality</span><span>NDA available on request</span></li>
+          <li><span data-i18n="Response time">Response time</span><span data-i18n="2–3 business days">2–3 business days</span></li>
+          <li><span data-i18n="Discovery call">Discovery call</span><span data-i18n="15–30 minutes">15–30 minutes</span></li>
+          <li><span data-i18n="Confidentiality">Confidentiality</span><span data-i18n="NDA available on request">NDA available on request</span></li>
         </ul>
       </div>
 
@@ -299,64 +297,65 @@
         <form id="intakeForm">
           <div class="field-row">
             <div class="field-group">
-              <label for="name">Name</label>
+              <label for="name" data-i18n="Name">Name</label>
               <input type="text" id="name" required>
             </div>
             <div class="field-group">
-              <label for="org">Organization / Department</label>
+              <label for="org" data-i18n="Organization / Department">Organization / Department</label>
               <input type="text" id="org" required>
             </div>
           </div>
           <div class="field-row">
             <div class="field-group">
-              <label for="email">Email</label>
+              <label for="email" data-i18n="Email">Email</label>
               <input type="email" id="email" required>
             </div>
             <div class="field-group">
-              <label for="phone">Phone (optional)</label>
+              <label for="phone" data-i18n="Phone (optional)">Phone (optional)</label>
               <input type="tel" id="phone">
             </div>
           </div>
           <div class="field-group">
-            <label for="problem">Problem Description</label>
-            <textarea id="problem" required placeholder="What are you trying to solve?"></textarea>
+            <label for="problem" data-i18n="Problem Description">Problem Description</label>
+            <textarea id="problem" required data-i18n-placeholder="What are you trying to solve?" placeholder="What are you trying to solve?"></textarea>
           </div>
           <div class="field-group">
-            <label for="outcome">Desired Outcome</label>
-            <textarea id="outcome" placeholder="What would a good result look like?"></textarea>
+            <label for="outcome" data-i18n="Desired Outcome">Desired Outcome</label>
+            <textarea id="outcome" data-i18n-placeholder="What would a good result look like?" placeholder="What would a good result look like?"></textarea>
           </div>
           <div class="field-row">
             <div class="field-group">
-              <label for="timeline">Timeline</label>
+              <label for="timeline" data-i18n="Timeline">Timeline</label>
               <select id="timeline">
-                <option>Flexible</option>
-                <option>Within 1 month</option>
-                <option>1–3 months</option>
-                <option>3+ months</option>
+                <option data-i18n="Flexible">Flexible</option>
+                <option data-i18n="Within 1 month">Within 1 month</option>
+                <option data-i18n="1–3 months">1–3 months</option>
+                <option data-i18n="3+ months">3+ months</option>
               </select>
             </div>
             <div class="field-group">
-              <label for="support">Type of Support Requested</label>
+              <label for="support" data-i18n="Type of Support Requested">Type of Support Requested</label>
               <select id="support">
-                <option>Quick consultation</option>
-                <option>Short project</option>
-                <option>Long-term collaboration</option>
-                <option>Not sure yet</option>
+                <option data-i18n="Quick consultation">Quick consultation</option>
+                <option data-i18n="Short project">Short project</option>
+                <option data-i18n="Long-term collaboration">Long-term collaboration</option>
+                <option data-i18n="Not sure yet">Not sure yet</option>
               </select>
             </div>
           </div>
           <div class="field-group">
-            <label for="data">Available Data</label>
-            <input type="text" id="data" placeholder="e.g. spreadsheets, sensor logs, none yet">
+            <label for="data" data-i18n="Available Data">Available Data</label>
+            <input type="text" id="data" data-i18n-placeholder="e.g. spreadsheets, sensor logs, none yet" placeholder="e.g. spreadsheets, sensor logs, none yet">
           </div>
           <div class="field-group">
-            <label for="confidentiality">Confidentiality Requirements</label>
-            <input type="text" id="confidentiality" placeholder="e.g. NDA required, public research, no restrictions">
+            <label for="confidentiality" data-i18n="Confidentiality Requirements">Confidentiality Requirements</label>
+            <input type="text" id="confidentiality" data-i18n-placeholder="e.g. NDA required, public research, no restrictions" placeholder="e.g. NDA required, public research, no restrictions">
           </div>
-          <button type="submit" class="btn btn-primary" style="width:100%; margin-top:6px;">Submit Project Request</button>
+          <button type="submit" class="btn btn-primary" style="width:100%; margin-top:6px;" data-i18n="Submit Project Request">Submit Project Request</button>
         </form>
         <div class="form-success" id="formSuccess">
-          <strong>Request received.</strong> Thank you — our intake team will follow up by email within 2–3 business days.
+          <strong data-i18n="Request received.">Request received.</strong>
+          <span data-i18n="Thank you — our intake team will follow up by email within 2–3 business days.">Thank you — our intake team will follow up by email within 2–3 business days.</span>
         </div>
       </div>
     </div>
@@ -366,12 +365,12 @@
 <!-- ===================== FINAL CTA ===================== -->
 <section class="section on-midnight final-cta" id="contact">
   <div class="container">
-    <p class="eyebrow">Get in Touch</p>
-    <h2>Have a challenging problem?</h2>
-    <p>The most important step toward a solution is understanding the problem correctly.</p>
+    <p class="eyebrow" data-i18n="Get in Touch">Get in Touch</p>
+    <h2 data-i18n="Have a challenging problem?">Have a challenging problem?</h2>
+    <p data-i18n="The most important step toward a solution is understanding the problem correctly.">The most important step toward a solution is understanding the problem correctly.</p>
     <div class="hero-actions">
-      <a href="#submit" class="btn btn-primary">Submit Project Request</a>
-      <a href="mailto:contact@psc.edu" class="btn btn-ghost-dark">Contact Our Team</a>
+      <a href="#submit" class="btn btn-primary" data-i18n="Submit Project Request">Submit Project Request</a>
+      <a href="mailto:contact@psc.edu" class="btn btn-ghost-dark" data-i18n="Contact Our Team">Contact Our Team</a>
     </div>
   </div>
 </section>
@@ -389,38 +388,39 @@
     <div class="footer-grid">
       <div>
         <p class="wordmark" style="margin-bottom:14px;">PS<span>C</span></p>
-        <p style="font-size:13.5px; max-width:280px;">A university-backed center translating complex problems into mathematical and computational solutions.</p>
+        <p style="font-size:13.5px; max-width:280px;" data-i18n="A university-backed center translating complex problems into mathematical and computational solutions.">A university-backed center translating complex problems into mathematical and computational solutions.</p>
       </div>
       <div>
-        <h4>Center</h4>
+        <h4 data-i18n="Center">Center</h4>
         <ul>
-          <li><a href="#what-we-do">About</a></li>
-          <li><a href="#how-it-works">Services</a></li>
-          <li><a href="#team">Team</a></li>
+          <li><a href="#what-we-do" data-i18n="About">About</a></li>
+          <li><a href="#how-it-works" data-i18n="Services">Services</a></li>
+          <li><a href="#team" data-i18n="Team">Team</a></li>
         </ul>
       </div>
       <div>
-        <h4>Work</h4>
+        <h4 data-i18n="Work">Work</h4>
         <ul>
-          <li><a href="#case-studies">Case Studies</a></li>
-          <li><a href="#submit">Submit a Problem</a></li>
+          <li><a href="#case-studies" data-i18n="Case Studies">Case Studies</a></li>
+          <li><a href="#submit" data-i18n="Submit a Problem">Submit a Problem</a></li>
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h4 data-i18n="Contact">Contact</h4>
         <ul>
           <li><a href="mailto:contact@psc.edu">contact@psc.edu</a></li>
-          <li><a href="#contact">Schedule a call</a></li>
+          <li><a href="#contact" data-i18n="Schedule a call">Schedule a call</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span id="year"></span> Problem Solving Center · Department of Mathematics</span>
-      <span>Scope &amp; Policies · Data Governance · Confidentiality</span>
+      <span>© <span id="year"></span> <span data-i18n="Problem Solving Center · Department of Mathematics">Problem Solving Center · Department of Mathematics</span></span>
+      <span data-i18n="Scope & Policies · Data Governance · Confidentiality">Scope &amp; Policies · Data Governance · Confidentiality</span>
     </div>
   </div>
 </footer>
 
+<script src="/js/i18n.js" defer></script>
 <script src="/js/ui.js" defer></script>
 <script src="/js/reveal.js" defer></script>
 <script src="/js/intake-form.js" defer></script>

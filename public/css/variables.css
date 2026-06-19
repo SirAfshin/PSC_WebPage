@@ -16,6 +16,9 @@
   --sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   --mono: "IBM Plex Mono", monospace;
 
+  /* Persian typeface — used for both headings and body copy in RTL mode */
+  --sans-fa: "Vazirmatn", "Tahoma", sans-serif;
+
   --maxw: 1180px;
   --radius: 4px;
 }
