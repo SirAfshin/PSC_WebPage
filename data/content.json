@@ -1,0 +1,40 @@
+{
+  "en": {
+    "hero.eyebrow": "University-Affiliated Research Center · Dept. of Mathematics",
+    "hero.titlePre": "Turning complex problems into ",
+    "hero.titleEm": "practical",
+    "hero.titlePost": " solutions.",
+    "hero.subtitle": "We translate difficult, real-world challenges into rigorous mathematical and computational work — then deliver answers people can actually act on.",
+    "status.1": "University Supported",
+    "status.2": "Interdisciplinary Team",
+    "status.3": "Research Driven",
+    "status.4": "Launching 2026",
+    "team.director.name": "Name to be announced",
+    "team.faculty.status": "Roster in formation",
+    "team.graduate.status": "Roster in formation",
+    "team.student.status": "Applications opening soon",
+    "cta.heading": "Have a challenging problem?",
+    "cta.text": "The most important step toward a solution is understanding the problem correctly.",
+    "footer.tagline": "A university-backed center translating complex problems into mathematical and computational solutions.",
+    "contact.email": "contact@psc.edu"
+  },
+  "fa": {
+    "hero.eyebrow": "مرکز پژوهشی وابسته به دانشگاه · گروه ریاضیات",
+    "hero.titlePre": "تبدیل مسائل پیچیده به راه‌حل‌های ",
+    "hero.titleEm": "عملی",
+    "hero.titlePost": ".",
+    "hero.subtitle": "ما چالش‌های دشوار و واقعی را به کارهای دقیق ریاضی و محاسباتی تبدیل می‌کنیم — و سپس پاسخ‌هایی ارائه می‌دهیم که واقعاً بتوان بر اساس آن‌ها عمل کرد.",
+    "status.1": "مورد حمایت دانشگاه",
+    "status.2": "تیم میان‌رشته‌ای",
+    "status.3": "مبتنی بر پژوهش",
+    "status.4": "آغاز فعالیت در ۲۰۲۶",
+    "team.director.name": "نام در آینده اعلام می‌شود",
+    "team.faculty.status": "فهرست در حال تکمیل",
+    "team.graduate.status": "فهرست در حال تکمیل",
+    "team.student.status": "ثبت‌نام به‌زودی آغاز می‌شود",
+    "cta.heading": "مسئله‌ای چالش‌برانگیز دارید؟",
+    "cta.text": "مهم‌ترین گام به‌سوی یک راه‌حل، درک درست مسئله است.",
+    "footer.tagline": "مرکزی مورد حمایت دانشگاه که مسائل پیچیده را به راه‌حل‌های ریاضی و محاسباتی تبدیل می‌کند.",
+    "contact.email": "contact@psc.edu"
+  }
+}
