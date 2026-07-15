@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" fill="#EEF2F7"/>
+  <circle cx="200" cy="120" r="50" stroke="#1F4E8C" stroke-width="1.5" fill="none" opacity="0.3"/>
+  <rect x="120" y="200" width="160" height="60" rx="8" stroke="#3a7bd5" stroke-width="1.5" fill="none" opacity="0.3"/>
+  <text x="200" y="270" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" fill="#5b6c83" opacity="0.5">Researcher Photo</text>
+</svg>

@@ -1,21 +1,33 @@
+let observer = null;
+
+function observeReveal() {
+  const selector = '.service-card, .project-card, .about-feature, .about-card, .timeline-step';
+  const els = document.querySelectorAll(`${selector}:not(.in)`);
+
+  if (!observer) {
+    observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.08, rootMargin: '0px 0px -30px 0px' }
+    );
+  }
+
+  els.forEach((el) => {
+    if (!el.classList.contains('reveal')) el.classList.add('reveal');
+    observer.observe(el);
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  setTimeout(observeReveal, 50);
+});
 
-  const selector = '.expertise-card, .case-card, .serve-card, .timeline-step, .status-cell, .team-card';
-  const revealEls = document.querySelectorAll(selector);
-  revealEls.forEach((el) => el.classList.add('reveal'));
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in');
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.12 }
-  );
-
-  revealEls.forEach((el) => observer.observe(el));
+document.addEventListener('psc:langchange', () => {
+  setTimeout(observeReveal, 50);
 });

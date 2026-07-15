@@ -6,15 +6,15 @@ const router = express.Router();
 // POST /api/intake
 router.post('/', (req, res) => {
   const {
-    name, organization, email, phone,
+    name, organization, email, phone, faculty,
     problem, outcome, timeline, support,
     data, confidentiality
   } = req.body || {};
 
-  if (!name || !organization || !email || !problem) {
+  if (!name || !email || !problem) {
     return res.status(400).json({
       ok: false,
-      error: 'Name, organization, email, and a problem description are required.'
+      error: 'Name, email, and a problem description are required.'
     });
   }
 
@@ -24,9 +24,10 @@ router.post('/', (req, res) => {
     status: 'new', // 'new' | 'read' | 'archived' — managed from the admin panel
     notes: '',
     name,
-    organization,
+    organization: organization || '',
     email,
     phone: phone || '',
+    faculty: faculty || '',
     problem,
     outcome: outcome || '',
     timeline: timeline || '',

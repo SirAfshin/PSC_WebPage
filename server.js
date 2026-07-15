@@ -41,6 +41,26 @@ if (!process.env.SESSION_SECRET) {
   );
 }
 
+app.get('/contact', (_req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'contact.html'));
+});
+
+app.get('/about', (_req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'about.html'));
+});
+
+app.get('/workflow', (_req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'workflow.html'));
+});
+
+app.get('/projects', (_req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'projects.html'));
+});
+
+app.get('/projects/:slug', (_req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'project.html'));
+});
+
 // Serve the static site (including /admin, since it lives at public/admin)
 app.use(express.static(path.join(__dirname, 'public')));
 

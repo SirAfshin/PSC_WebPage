@@ -1,118 +1,50 @@
 /* =====================================================
-   LANGUAGE TOGGLE BUTTON
+   RTL MODE
 ===================================================== */
-.lang-toggle{
-  background:transparent;
-  border:1px solid rgba(255,255,255,0.18);
-  color:var(--white);
-  padding:10px 14px;
-  border-radius:999px;
-  font-size:13px;
-  font-weight:600;
-  line-height:1;
-  transition:background .2s ease, border-color .2s ease;
-}
-.lang-toggle:hover{
-  background:rgba(255,255,255,0.08);
-  border-color:rgba(255,255,255,0.3);
+html[dir="rtl"] body {
+  direction: rtl;
+  font-family: var(--sans-fa);
 }
 
-/* =====================================================
-   RTL MODE — GLOBAL
-   Note: flexbox "row" already mirrors automatically under
-   dir="rtl" (it flows along the inline/text direction), so
-   we do NOT force flex-direction:row-reverse anywhere below —
-   doing so would flip layouts back to a visually-LTR order.
-===================================================== */
-html[dir="rtl"] body{
-  direction:rtl;
-  font-family:var(--sans-fa);
+html[dir="rtl"][lang="ar"] body {
+  font-family: var(--sans-ar);
 }
 
 html[dir="rtl"] h1,
 html[dir="rtl"] h2,
-html[dir="rtl"] h3{
-  font-family:var(--sans-fa);
-  font-weight:700;
-  letter-spacing:0;
+html[dir="rtl"] h3 {
+  letter-spacing: 0;
 }
 
-html[dir="rtl"] .hero h1 em{
-  font-style:normal;
+html[dir="rtl"] .brand-logo,
+html[dir="rtl"] [data-bidi-isolate] {
+  direction: ltr;
+  unicode-bidi: isolate;
 }
 
-/* Mono/uppercase "label" typography doesn't translate well to Persian:
-   no letter case, and wide tracking breaks letterforms. Reset those. */
-html[dir="rtl"] .eyebrow,
-html[dir="rtl"] .wave-caption,
-html[dir="rtl"] .hero-foot span,
-html[dir="rtl"] .case-tag,
-html[dir="rtl"] .team-role,
-html[dir="rtl"] .status-cell span,
-html[dir="rtl"] .footer-grid h4,
-html[dir="rtl"] .pill,
-html[dir="rtl"] .tag,
-html[dir="rtl"] .timeline-num,
-html[dir="rtl"] .case-note,
-html[dir="rtl"] .form-list li span:last-child{
-  font-family:var(--sans-fa);
-  letter-spacing:0;
-  text-transform:none;
+html[dir="rtl"] .nav-links.open {
+  align-items: flex-end;
 }
 
-/* Keep brand mark, emails and other Latin-only fragments visually LTR
-   even while embedded in an RTL paragraph */
-html[dir="rtl"] .wordmark,
-html[dir="rtl"] [data-bidi-isolate]{
-  direction:ltr;
-  unicode-bidi:isolate;
-}
-
-/* =====================================================
-   NAV
-===================================================== */
-html[dir="rtl"] .nav-links.open{
-  align-items:flex-end;
-}
-
-/* =====================================================
-   HERO
-===================================================== */
-html[dir="rtl"] .hero-sub{
-  margin-inline-start:0;
-}
-
-/* Mirror the decorative process-flow line so it reads right-to-left,
-   matching the now-mirrored caption row beneath it */
-html[dir="rtl"] .hero-visual svg{
-  transform:scaleX(-1);
-}
-
-/* =====================================================
-   TIMELINE
-   The connector line and step padding are physically (not logically)
-   positioned in the base CSS, so they need an explicit RTL mirror.
-===================================================== */
-html[dir="rtl"] .timeline-step{
-  padding:0 0 0 20px;
-}
-html[dir="rtl"] .timeline-step:not(:last-child)::after{
-  left:0;
-  right:38px;
-}
-
-/* =====================================================
-   FORMS
-===================================================== */
 html[dir="rtl"] input,
 html[dir="rtl"] textarea,
-html[dir="rtl"] select{
-  text-align:right;
+html[dir="rtl"] select {
+  text-align: right;
 }
 
-/* Email addresses and similar Latin tokens inside RTL copy */
-html[dir="rtl"] a[href^="mailto:"]{
-  direction:ltr;
-  unicode-bidi:isolate;
-  display:inline-block;
+html[dir="rtl"] a[href^="mailto:"] {
+  direction: ltr;
+  unicode-bidi: isolate;
+  display: inline-block;
+}
+
+html[dir="rtl"] .timeline-step:not(:last-child)::before {
+  left: auto;
+  right: 27px;
+}
+
+@media (max-width: 600px) {
+  html[dir="rtl"] .timeline-step:not(:last-child)::before {
+    right: 21px;
+  }
 }

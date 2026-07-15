@@ -1,3 +1,5 @@
+import { t, getLang } from './i18n.js';
+
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('intakeForm');
   const success = document.getElementById('formSuccess');
@@ -8,21 +10,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const payload = {
       name: document.getElementById('name').value,
-      organization: document.getElementById('org').value,
       email: document.getElementById('email').value,
       phone: document.getElementById('phone').value,
-      problem: document.getElementById('problem').value,
-      outcome: document.getElementById('outcome').value,
-      timeline: document.getElementById('timeline').value,
-      support: document.getElementById('support').value,
-      data: document.getElementById('data').value,
-      confidentiality: document.getElementById('confidentiality').value
+      faculty: document.getElementById('faculty').value,
+      problem: document.getElementById('problem').value
     };
 
     const submitBtn = form.querySelector('button[type="submit"]');
     const originalLabel = submitBtn.textContent;
     submitBtn.disabled = true;
-    submitBtn.textContent = 'Sending...';
+    submitBtn.textContent = t('contact.sending');
 
     try {
       const res = await fetch('/api/intake', {
@@ -36,10 +33,17 @@ document.addEventListener('DOMContentLoaded', () => {
       form.classList.add('hide');
       success.classList.add('show');
       success.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    } catch (err) {
+    } catch {
       submitBtn.disabled = false;
       submitBtn.textContent = originalLabel;
-      alert('Something went wrong submitting your request. Please try again or email us directly.');
+      alert(t('contact.error'));
     }
   });
+});
+
+document.addEventListener('psc:langchange', () => {
+  const submitBtn = document.querySelector('#intakeForm button[type="submit"]');
+  if (submitBtn && !submitBtn.disabled) {
+    submitBtn.textContent = t('contact.submit');
+  }
 });

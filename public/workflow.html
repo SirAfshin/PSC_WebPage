@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.workflowTitle">تماهنگ همکاری — PSC</title>
+<meta name="description" data-i18n-content="meta.workflowDescription" content="مراحل انجام کار از ثبت مسئله تا تحویل نهایی.">
+
+<script>
+(function(){var t=localStorage.getItem('site-theme');if(t==='dark')document.documentElement.setAttribute('data-theme','dark');var l=localStorage.getItem('site-lang');if(l==='en'){document.documentElement.lang='en';document.documentElement.dir='ltr';}else if(l==='ar'){document.documentElement.lang='ar';document.documentElement.dir='rtl';}})();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/variables.css">
+<link rel="stylesheet" href="/css/base.css">
+<link rel="stylesheet" href="/css/components.css">
+<link rel="stylesheet" href="/css/sections.css">
+<link rel="stylesheet" href="/css/rtl.css">
+</head>
+<body>
+
+<div data-component="navbar"></div>
+
+<header class="page-header">
+  <div class="container">
+    <p class="badge" data-i18n="nav.workflow">همکاری</p>
+    <h1 data-i18n="workflow.title">مراحل انجام کار</h1>
+    <p class="lead" data-i18n="workflow.subtitle">مسیر روشن و قابل پیش‌بینی از ثبت مسئله تا تحویل نهایی.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="timeline">
+      <div class="timeline-step reveal">
+        <div class="timeline-num" data-i18n="workflow.num1">۱</div>
+        <div class="timeline-content">
+          <h3 data-i18n="workflow.step1">ثبت مسئله</h3>
+          <p data-i18n="workflow.step1.desc">شرح مسئله و اطلاعات تماس از طریق فرم یا ایمیل.</p>
+        </div>
+      </div>
+      <div class="timeline-step reveal">
+        <div class="timeline-num" data-i18n="workflow.num2">۲</div>
+        <div class="timeline-content">
+          <h3 data-i18n="workflow.step2">بررسی مقدماتی</h3>
+          <p data-i18n="workflow.step2.desc">ارزیابی اولیه مسئله و تطابق با توانمندی‌های مرکز.</p>
+        </div>
+      </div>
+      <div class="timeline-step reveal">
+        <div class="timeline-num" data-i18n="workflow.num3">۳</div>
+        <div class="timeline-content">
+          <h3 data-i18n="workflow.step3">شفاف‌سازی مسئله</h3>
+          <p data-i18n="workflow.step3.desc">تعریف دقیق مسئله، داده‌ها و خروجی‌های مورد انتظار.</p>
+        </div>
+      </div>
+      <div class="timeline-step reveal">
+        <div class="timeline-num" data-i18n="workflow.num4">۴</div>
+        <div class="timeline-content">
+          <h3 data-i18n="workflow.step4">نشست اولیه و قرارداد</h3>
+          <p data-i18n="workflow.step4.desc">جلسه مشترک، توافق بر دامنه کار و امضای قرارداد.</p>
+        </div>
+      </div>
+      <div class="timeline-step reveal">
+        <div class="timeline-num" data-i18n="workflow.num5">۵</div>
+        <div class="timeline-content">
+          <h3 data-i18n="workflow.step5">حل مسئله و تحویل نهایی</h3>
+          <p data-i18n="workflow.step5.desc">اجرای علمی، گزارش‌دهی و تحویل راه‌حل نهایی.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section cta-section on-soft">
+  <div class="container cta-inner">
+    <h2 data-i18n="cta.title">مسئله خود را برای ما شرح دهید.</h2>
+    <a href="/contact" class="btn btn-primary" data-i18n="hero.cta">ارسال یک مسئله یا مشکل</a>
+  </div>
+</section>
+
+<div data-component="footer"></div>
+
+<script type="module" src="/js/app.js"></script>
+<script type="module" src="/js/reveal.js"></script>
+</body>
+</html>

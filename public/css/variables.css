@@ -1,24 +1,111 @@
 /* ===================== DESIGN TOKENS ===================== */
-:root{
-  --midnight:#0B1F3A;
-  --midnight-soft:#13294d;
-  --royal:#1F4E8C;
-  --silver:#D6DCE5;
-  --silver-soft:#EFF2F6;
-  --white:#FFFFFF;
-  --gold:#D4A017;
-  --gold-soft:#e7c463;
-  --ink:#0B1F3A;
-  --muted:#5b6c83;
-  --line:#dde2ea;
+:root {
+  /* Brand — used sparingly */
+  --brand: #1a365d;
+  --brand-hover: #234876;
+  --brand-muted: #4a6fa5;
 
-  --serif: "Playfair Display", "Georgia", serif;
+  /* Neutrals — dominant palette */
+  --neutral-50: #fafafa;
+  --neutral-100: #f4f4f5;
+  --neutral-200: #e4e4e7;
+  --neutral-300: #d4d4d8;
+  --neutral-400: #a1a1aa;
+  --neutral-500: #71717a;
+  --neutral-600: #52525b;
+  --neutral-700: #3f3f46;
+  --neutral-800: #27272a;
+  --neutral-900: #18181b;
+
+  /* Semantic */
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-alt: var(--neutral-50);
+  --surface-raised: var(--neutral-100);
+  --text: var(--neutral-900);
+  --text-secondary: var(--neutral-600);
+  --text-muted: var(--neutral-500);
+  --border: var(--neutral-200);
+  --border-subtle: var(--neutral-100);
+
+  --accent: var(--brand);
+  --accent-hover: var(--brand-hover);
+  --accent-soft: #f0f3f7;
+  --accent-text: var(--brand-muted);
+
+  /* Hero */
+  --bg-hero: #ffffff;
+
+  /* CTA dark block */
+  --cta-bg: #152a45;
+  --cta-text: #f4f6f8;
+  --cta-muted: #9aabb8;
+
+  /* Legacy aliases */
+  --royal: var(--brand);
+  --royal-light: var(--brand-hover);
+  --ink: var(--text);
+  --muted: var(--text-muted);
+  --line: var(--border);
+  --white: #ffffff;
+  --blue-bg: var(--accent-soft);
+  --bg-alt: var(--surface-alt);
+  --midnight: var(--cta-bg);
+  --midnight-soft: var(--brand-hover);
+  --silver-soft: var(--neutral-100);
+
   --sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  --mono: "IBM Plex Mono", monospace;
-
-  /* Persian typeface — used for both headings and body copy in RTL mode */
   --sans-fa: "Vazirmatn", "Tahoma", sans-serif;
+  --sans-ar: "Noto Naskh Arabic", "Tahoma", serif;
 
-  --maxw: 1180px;
-  --radius: 4px;
+  --maxw: 1140px;
+  --nav-h: 68px;
+  --radius: 10px;
+  --radius-sm: 6px;
+  --shadow-sm: 0 1px 2px rgba(24, 24, 27, 0.04);
+  --shadow-md: 0 4px 16px rgba(24, 24, 27, 0.06);
+
+  --space-section: clamp(72px, 10vw, 112px);
+  --space-block: clamp(20px, 3vw, 32px);
+}
+
+[data-theme="dark"] {
+  --brand: #6b9fd4;
+  --brand-hover: #8ab5e0;
+  --brand-muted: #9ab8d8;
+
+  --neutral-50: #1c1c1f;
+  --neutral-100: #232326;
+  --neutral-200: #2e2e33;
+  --neutral-300: #3f3f46;
+  --neutral-400: #71717a;
+  --neutral-500: #a1a1aa;
+  --neutral-600: #d4d4d8;
+  --neutral-700: #e4e4e7;
+  --neutral-800: #f4f4f5;
+  --neutral-900: #fafafa;
+
+  --bg: #141416;
+  --surface: #1c1c1f;
+  --surface-alt: #18181b;
+  --surface-raised: #232326;
+  --text: #f4f4f5;
+  --text-secondary: #d4d4d8;
+  --text-muted: #a1a1aa;
+  --border: #2e2e33;
+  --border-subtle: #232326;
+
+  --accent: var(--brand);
+  --accent-hover: var(--brand-hover);
+  --accent-soft: rgba(107, 159, 212, 0.1);
+  --accent-text: var(--brand-muted);
+
+  --bg-hero: #141416;
+
+  --cta-bg: #152a45;
+  --cta-text: #f4f6f8;
+  --cta-muted: #9aabb8;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.3);
 }

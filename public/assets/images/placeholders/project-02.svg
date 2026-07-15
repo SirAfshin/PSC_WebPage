@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" fill="none">
+  <rect width="640" height="360" fill="#eef2f6"/>
+  <rect x="40" y="40" width="560" height="280" rx="8" fill="#fff" stroke="#d4d8dd" stroke-width="1"/>
+  <path d="M100 260 L180 140 L300 200 L420 100 L540 260 Z" stroke="#1a365d" stroke-width="2" fill="rgba(26,54,93,0.05)"/>
+  <circle cx="180" cy="140" r="6" fill="#4a6fa5"/><circle cx="420" cy="100" r="6" fill="#4a6fa5"/>
+  <line x1="180" y1="140" x2="420" y2="100" stroke="#d4d8dd" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="320" y="310" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="15" font-weight="600" fill="#52525b">زنجیره تأمین</text>
+</svg>

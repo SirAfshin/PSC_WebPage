@@ -1,40 +1,26 @@
 {
   "en": {
-    "hero.eyebrow": "University-Affiliated Research Center · Dept. of Mathematics",
-    "hero.titlePre": "Turning complex problems into ",
-    "hero.titleEm": "practical",
-    "hero.titlePost": " solutions.",
-    "hero.subtitle": "We translate difficult, real-world challenges into rigorous mathematical and computational work — then deliver answers people can actually act on.",
-    "status.1": "University Supported",
-    "status.2": "Interdisciplinary Team",
-    "status.3": "Research Driven",
-    "status.4": "Launching 2026",
-    "team.director.name": "Name to be announced",
-    "team.faculty.status": "Roster in formation",
-    "team.graduate.status": "Roster in formation",
-    "team.student.status": "Applications opening soon",
-    "cta.heading": "Have a challenging problem?",
-    "cta.text": "The most important step toward a solution is understanding the problem correctly.",
-    "footer.tagline": "A university-backed center translating complex problems into mathematical and computational solutions.",
-    "contact.email": "contact@psc.edu"
+    "hero.title": "With mathematics, statistics, and AI, complex industrial problems are solvable.",
+    "hero.subtitle": "The Problem Solving Center models the hard core of an industrial project and solves it through scientific methods.",
+    "about.lead": "The Problem Solving Center is an independent research center that transforms complex computational parts of an industrial project into a solution.",
+    "cta.heading": "Describe your problem to us.",
+    "cta.text": "We will contact you within 5 business days to schedule an initial meeting.",
+    "contact.emailValue": "psc@aut.ac.ir"
   },
   "fa": {
-    "hero.eyebrow": "مرکز پژوهشی وابسته به دانشگاه · گروه ریاضیات",
-    "hero.titlePre": "تبدیل مسائل پیچیده به راه‌حل‌های ",
-    "hero.titleEm": "عملی",
-    "hero.titlePost": ".",
-    "hero.subtitle": "ما چالش‌های دشوار و واقعی را به کارهای دقیق ریاضی و محاسباتی تبدیل می‌کنیم — و سپس پاسخ‌هایی ارائه می‌دهیم که واقعاً بتوان بر اساس آن‌ها عمل کرد.",
-    "status.1": "مورد حمایت دانشگاه",
-    "status.2": "تیم میان‌رشته‌ای",
-    "status.3": "مبتنی بر پژوهش",
-    "status.4": "آغاز فعالیت در ۲۰۲۶",
-    "team.director.name": "نام در آینده اعلام می‌شود",
-    "team.faculty.status": "فهرست در حال تکمیل",
-    "team.graduate.status": "فهرست در حال تکمیل",
-    "team.student.status": "ثبت‌نام به‌زودی آغاز می‌شود",
-    "cta.heading": "مسئله‌ای چالش‌برانگیز دارید؟",
-    "cta.text": "مهم‌ترین گام به‌سوی یک راه‌حل، درک درست مسئله است.",
-    "footer.tagline": "مرکزی مورد حمایت دانشگاه که مسائل پیچیده را به راه‌حل‌های ریاضی و محاسباتی تبدیل می‌کند.",
-    "contact.email": "contact@psc.edu"
+    "hero.title": "با کمک ریاضیات، آمار و هوش مصنوعی، مسائل پیچیده صنعت حل‌پذیر است.",
+    "hero.subtitle": "مرکز حل مسئله؛ هسته سخت یک پروژه صنعتی را مدل‌سازی کرده و آن را با روش‌های علمی حل می‌کند.",
+    "about.lead": "مرکز حل مسئله یک مرکز پژوهشی مستقل است که بخش‌های پیچیده محاسباتی یک پروژه صنعتی را به یک راه‌حل تبدیل می‌کند.",
+    "cta.heading": "مسئله خود را برای ما شرح دهید.",
+    "cta.text": "ظرف ۵ روز کاری جهت تشکیل جلسه اولیه با شما تماس می‌گیریم.",
+    "contact.emailValue": "psc@aut.ac.ir"
+  },
+  "ar": {
+    "hero.title": "بمساعدة الرياضيات والإحصاء والذكاء الاصطناعي، المسائل الصناعية المعقدة قابلة للحل.",
+    "hero.subtitle": "مركز حل المسائل؛ يُنمذج النواة الصعبة لمشروع صناعي ويحلها بأساليب علمية.",
+    "about.lead": "مركز حل المسائل مركز بحثي مستقل يحول الأجزاء الحسابية المعقدة من مشروع صناعي إلى حل.",
+    "cta.heading": "صف مشكلتك لنا.",
+    "cta.text": "سنتواصل معك خلال ٥ أيام عمل لتحديد جلسة أولية.",
+    "contact.emailValue": "psc@aut.ac.ir"
   }
 }

@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const CONTENT_FILE = path.join(__dirname, 'content.json');
-const DEFAULT_CONTENT = { en: {}, fa: {} };
+const DEFAULT_CONTENT = { en: {}, fa: {}, ar: {} };
 
 function read() {
   try {
@@ -25,7 +25,8 @@ function update(changes) {
   const current = read();
   const next = {
     en: { ...current.en, ...(changes.en || {}) },
-    fa: { ...current.fa, ...(changes.fa || {}) }
+    fa: { ...current.fa, ...(changes.fa || {}) },
+    ar: { ...current.ar, ...(changes.ar || {}) }
   };
   write(next);
   return next;

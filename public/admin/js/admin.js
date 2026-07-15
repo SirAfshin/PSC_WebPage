@@ -45,7 +45,7 @@
       group: 'Footer & Contact',
       fields: [
         { key: 'footer.tagline', label: 'Footer tagline', type: 'textarea' },
-        { key: 'contact.email', label: 'Contact email', type: 'input' }
+        { key: 'contact.emailValue', label: 'Contact email', type: 'input' }
       ]
     }
   ];

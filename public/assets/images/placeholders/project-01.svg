@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" fill="none">
+  <rect width="640" height="360" fill="#eef2f6"/>
+  <rect x="40" y="40" width="560" height="280" rx="8" fill="#fff" stroke="#d4d8dd" stroke-width="1"/>
+  <circle cx="200" cy="160" r="48" stroke="#1a365d" stroke-width="2" fill="rgba(26,54,93,0.06)"/>
+  <path d="M120 260 L220 120 L340 200 L460 100 L560 240" stroke="#4a6fa5" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <circle cx="220" cy="120" r="5" fill="#1a365d"/><circle cx="460" cy="100" r="5" fill="#1a365d"/>
+  <text x="320" y="310" text-anchor="middle" font-family="Vazirmatn,sans-serif" font-size="15" font-weight="600" fill="#52525b">زمان‌بندی بیمارستان</text>
+</svg>

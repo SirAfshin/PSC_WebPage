@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title data-i18n="meta.title">PSC — Problem Solving Center</title>
-<meta name="description" data-i18n-content="meta.description" content="A university-affiliated center that translates complex real-world problems into rigorous mathematical and computational solutions.">
+<title data-i18n="meta.title">PSC — مرکز حل مسئله</title>
+<meta name="description" data-i18n-content="meta.description" content="مرکز پژوهشی مستقل که بخش‌های پیچیده محاسباتی پروژه‌های صنعتی را حل می‌کند.">
+
+<script>
+(function(){var t=localStorage.getItem('site-theme');if(t==='dark')document.documentElement.setAttribute('data-theme','dark');var l=localStorage.getItem('site-lang');if(l==='en'){document.documentElement.lang='en';document.documentElement.dir='ltr';}else if(l==='ar'){document.documentElement.lang='ar';document.documentElement.dir='rtl';}})();
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/variables.css">
 <link rel="stylesheet" href="/css/base.css">
@@ -18,412 +22,183 @@
 </head>
 <body>
 
-<!-- ===================== NAV ===================== -->
-<nav class="nav">
-  <div class="container nav-row">
-    <a href="#top" class="wordmark">PS<span>C</span></a>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#what-we-do" data-i18n="What We Do">What We Do</a></li>
-      <li><a href="#how-it-works" data-i18n="How It Works">How It Works</a></li>
-      <li><a href="#case-studies" data-i18n="Case Studies">Case Studies</a></li>
-      <li><a href="#team" data-i18n="Team">Team</a></li>
-      <li><a href="#submit" data-i18n="Submit a Problem">Submit a Problem</a></li>
-    </ul>
-    <div class="nav-cta">
-      <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch to Persian">فارسی</button>
-      <a href="#submit" class="btn btn-ghost-dark" style="padding:10px 18px;" data-i18n="Submit a Problem">Submit a Problem</a>
-      <button class="nav-toggle" id="navToggle" data-i18n-aria-label="Toggle menu" aria-label="Toggle menu">☰</button>
-    </div>
-  </div>
-</nav>
+<div data-component="navbar"></div>
 
-<!-- ===================== HERO ===================== -->
 <header class="hero" id="top">
-  <div class="container">
-    <div class="hero-inner">
-      <div>
-        <p class="eyebrow" data-i18n="University-Affiliated Research Center · Dept. of Mathematics" data-admin-key="hero.eyebrow">University-Affiliated Research Center · Dept. of Mathematics</p>
-        <h1><span data-i18n="heroTitlePre" data-admin-key="hero.titlePre">Turning complex problems into </span><em data-i18n="heroTitleEm" data-admin-key="hero.titleEm">practical</em><span data-i18n="heroTitlePost" data-admin-key="hero.titlePost"> solutions.</span></h1>
-        <p class="hero-sub" data-i18n="We translate difficult, real-world challenges into rigorous mathematical and computational work — then deliver answers people can actually act on." data-admin-key="hero.subtitle">We translate difficult, real-world challenges into rigorous mathematical and computational work — then deliver answers people can actually act on.</p>
-        <div class="hero-actions">
-          <a href="#submit" class="btn btn-primary" data-i18n="Submit a Problem">Submit a Problem</a>
-          <a href="#contact" class="btn btn-ghost-dark" data-i18n="Schedule a Consultation">Schedule a Consultation</a>
-        </div>
-      </div>
-
-      <div class="hero-visual">
-        <svg viewBox="0 0 1200 300" width="100%" aria-hidden="true">
-          <path d="M0,150 L35,100 L70,195 L105,85 L140,185 L175,95 L210,170 L245,115 L280,160 L315,130 L350,150 L385,138 L420,150 C460,160 480,120 520,150 C560,180 580,120 620,150 C660,180 680,120 720,150 C760,180 780,120 820,150 C860,180 880,120 920,150 C960,180 980,120 1020,150 C1060,180 1080,120 1120,150 C1160,180 1180,135 1200,150"
-            fill="none" stroke="#3a5d8c" stroke-width="2"/>
-          <circle cx="20" cy="150" r="5" fill="#D4A017"/>
-          <circle cx="300" cy="143" r="5" fill="#D4A017"/>
-          <circle cx="570" cy="150" r="5" fill="#D4A017"/>
-          <circle cx="840" cy="150" r="5" fill="#D4A017"/>
-          <circle cx="1110" cy="150" r="5" fill="#D4A017"/>
-        </svg>
-        <div class="wave-caption-row">
-          <span class="wave-caption is-active" data-i18n="Real-World Challenge">Real-World Challenge</span>
-          <span class="wave-caption" data-i18n="Problem Formulation">Problem Formulation</span>
-          <span class="wave-caption" data-i18n="Mathematical Model">Mathematical Model</span>
-          <span class="wave-caption" data-i18n="Analysis & Computation">Analysis &amp; Computation</span>
-          <span class="wave-caption" data-i18n="Actionable Solution">Actionable Solution</span>
-        </div>
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <h1 data-i18n="hero.title" data-admin-key="hero.title">با کمک ریاضیات، آمار و هوش مصنوعی، مسائل پیچیده صنعت حل‌پذیر است.</h1>
+      <p class="hero-sub" data-i18n="hero.subtitle" data-admin-key="hero.subtitle">مرکز حل مسئله؛ هسته سخت یک پروژه صنعتی را مدل‌سازی کرده و آن را با روش‌های علمی حل می‌کند.</p>
+      <div class="hero-actions">
+        <a href="/contact" class="btn btn-primary" data-i18n="hero.cta">ارسال یک مسئله یا مشکل</a>
       </div>
     </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg class="mesh-graphic" viewBox="0 0 800 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect class="hero-panel-math" x="30" y="50" width="310" height="530" rx="14" fill="var(--hero-math-bg)" stroke="var(--hero-math-stroke)" stroke-width="1.5" opacity="0.9"/>
+        <text class="hero-label-math" x="185" y="95" text-anchor="middle" font-family="Vazirmatn,Inter,sans-serif" font-size="15" font-weight="700" fill="var(--hero-math-text)">ریاضیات</text>
+        <path class="hero-curve-math" d="M70 410 Q185 170 300 410" stroke="var(--hero-math-stroke)" stroke-width="2.5" fill="none"/>
+        <line x1="70" y1="410" x2="300" y2="410" stroke="var(--hero-line-muted)" stroke-width="1"/>
+        <g class="hero-matrix" transform="translate(105,215)" stroke="var(--hero-math-stroke)" stroke-width="1.2">
+          <rect x="0" y="0" width="160" height="105" rx="5" fill="var(--hero-math-inner)"/>
+          <line x1="53" y1="0" x2="53" y2="105"/><line x1="107" y1="0" x2="107" y2="105"/>
+          <line x1="0" y1="35" x2="160" y2="35"/><line x1="0" y1="70" x2="160" y2="70"/>
+        </g>
+        <text class="hero-formula-math" x="185" y="155" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="14" font-weight="500" fill="var(--hero-math-text)">min f(x)</text>
+        <text class="hero-formula-math" x="185" y="385" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="13" fill="var(--hero-math-text)">&#8747; f(x) dx</text>
+        <text class="hero-formula-math" x="185" y="455" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="13" fill="var(--hero-math-text)">Ax = b</text>
+        <text class="hero-formula-math" x="185" y="525" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="12" fill="var(--hero-math-text)">&#8711;L(&#952;) = 0</text>
 
-    <div class="hero-foot">
-      <span data-i18n="Optimization">Optimization</span>
-      <span data-i18n="Statistics & Data Science">Statistics &amp; Data Science</span>
-      <span data-i18n="Scientific Computing">Scientific Computing</span>
-      <span data-i18n="Operations Research">Operations Research</span>
-      <span data-i18n="Machine Learning">Machine Learning</span>
-      <span data-i18n="Decision Support">Decision Support</span>
+        <rect class="hero-panel-ai" x="460" y="50" width="310" height="530" rx="14" fill="var(--hero-ai-bg)" stroke="var(--hero-ai-stroke)" stroke-width="1.5" opacity="0.9"/>
+        <text class="hero-label-ai" x="615" y="95" text-anchor="middle" font-family="Vazirmatn,Inter,sans-serif" font-size="15" font-weight="700" fill="var(--hero-ai-text)">هوش مصنوعی</text>
+        <g class="hero-network" stroke="var(--hero-ai-stroke)" stroke-width="1.2" opacity="var(--hero-network-opacity)">
+          <line x1="515" y1="195" x2="585" y2="275"/><line x1="515" y1="195" x2="585" y2="355"/>
+          <line x1="515" y1="195" x2="585" y2="435"/><line x1="515" y1="355" x2="585" y2="275"/>
+          <line x1="515" y1="355" x2="585" y2="355"/><line x1="515" y1="355" x2="585" y2="435"/>
+          <line x1="585" y1="275" x2="655" y2="275"/><line x1="585" y1="355" x2="655" y2="355"/>
+          <line x1="585" y1="435" x2="655" y2="435"/>
+          <line x1="655" y1="275" x2="720" y2="320"/><line x1="655" y1="355" x2="720" y2="320"/>
+          <line x1="655" y1="435" x2="720" y2="320"/>
+        </g>
+        <circle class="hero-node-ai" cx="515" cy="195" r="11" fill="var(--hero-ai-node)"/>
+        <circle class="hero-node-ai" cx="515" cy="355" r="11" fill="var(--hero-ai-node)"/>
+        <circle class="hero-node-ai-soft" cx="585" cy="275" r="9" fill="var(--hero-ai-node-soft)"/>
+        <circle class="hero-node-ai-soft" cx="585" cy="355" r="9" fill="var(--hero-ai-node-soft)"/>
+        <circle class="hero-node-ai-soft" cx="585" cy="435" r="9" fill="var(--hero-ai-node-soft)"/>
+        <circle class="hero-node-ai-soft" cx="655" cy="275" r="9" fill="var(--hero-ai-node-soft)"/>
+        <circle class="hero-node-ai-soft" cx="655" cy="355" r="9" fill="var(--hero-ai-node-soft)"/>
+        <circle class="hero-node-ai-soft" cx="655" cy="435" r="9" fill="var(--hero-ai-node-soft)"/>
+        <circle class="hero-node-ai-hub" cx="720" cy="320" r="14" fill="var(--hero-ai-node)"/>
+        <circle class="hero-node-ai-hub" cx="720" cy="320" r="26" fill="var(--hero-ai-node)" opacity="0.15"/>
+        <text class="hero-formula-ai" x="615" y="155" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="13" fill="var(--hero-ai-text)">&#963;(Wx + b)</text>
+        <text class="hero-formula-ai" x="615" y="495" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="13" fill="var(--hero-ai-text)">P(y|x)</text>
+        <text class="hero-formula-ai" x="615" y="525" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="12" fill="var(--hero-ai-text)">&#8706;L/&#8706;w</text>
+
+        <circle class="hero-hub-ring" cx="400" cy="320" r="38" fill="var(--hero-hub-bg)" stroke="var(--hero-math-stroke)" stroke-width="2"/>
+        <circle class="hero-hub-core" cx="400" cy="320" r="16" fill="var(--hero-hub-core)"/>
+        <circle class="hero-hub-glow" cx="400" cy="320" r="30" fill="var(--hero-hub-core)" opacity="0.1"/>
+        <line x1="340" y1="320" x2="362" y2="320" stroke="var(--hero-math-stroke)" stroke-width="2"/>
+        <line x1="438" y1="320" x2="460" y2="320" stroke="var(--hero-ai-stroke)" stroke-width="2"/>
+        <text class="hero-hub-label" x="400" y="395" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="700" fill="var(--hero-hub-label)">PSC</text>
+      </svg>
     </div>
   </div>
 </header>
 
-<!-- ===================== WHAT WE DO ===================== -->
-<section class="section" id="what-we-do">
+<section class="section on-soft" id="services">
   <div class="container">
     <div class="section-head">
-      <p class="eyebrow on-light" data-i18n="What We Do">What We Do</p>
-      <h2 data-i18n="Areas of expertise">Areas of expertise</h2>
-      <p data-i18n="A single front door into a wide range of mathematical and computational disciplines — assembled into the right team for each problem.">A single front door into a wide range of mathematical and computational disciplines — assembled into the right team for each problem.</p>
+      <p class="badge" data-i18n="services.badge">خدمات</p>
+      <h2 data-i18n="services.title">چطور می‌توانیم کمک کنیم؟</h2>
+      <p data-i18n="services.subtitle">برای هر مسئله، تیمی متناسب از متخصصان تشکیل می‌دهیم.</p>
     </div>
-  </div>
-  <div class="container" style="padding:0;">
-    <div class="expertise-grid">
-      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Mathematical Modeling">Mathematical Modeling</h3><p data-i18n="Translating real-world systems into precise equations and structures.">Translating real-world systems into precise equations and structures.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Optimization">Optimization</h3><p data-i18n="Finding the best decision among many feasible options.">Finding the best decision among many feasible options.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Operations Research">Operations Research</h3><p data-i18n="Improving how complex systems and processes run.">Improving how complex systems and processes run.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Statistics & Data Analytics">Statistics &amp; Data Analytics</h3><p data-i18n="Extracting reliable insight from noisy, real-world data.">Extracting reliable insight from noisy, real-world data.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Scientific Computing">Scientific Computing</h3><p data-i18n="Solving large-scale problems with numerical methods and code.">Solving large-scale problems with numerical methods and code.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Numerical Analysis">Numerical Analysis</h3><p data-i18n="Ensuring computational solutions stay accurate and stable.">Ensuring computational solutions stay accurate and stable.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Simulation">Simulation</h3><p data-i18n="Testing scenarios safely before committing real resources.">Testing scenarios safely before committing real resources.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Forecasting">Forecasting</h3><p data-i18n="Anticipating demand, risk, and future system behavior.">Anticipating demand, risk, and future system behavior.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Machine Learning & AI">Machine Learning &amp; AI</h3><p data-i18n="Learning patterns from data to support better decisions.">Learning patterns from data to support better decisions.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Network Science">Network Science</h3><p data-i18n="Understanding connectivity, flow, and structure in complex systems.">Understanding connectivity, flow, and structure in complex systems.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Decision Support Systems">Decision Support Systems</h3><p data-i18n="Turning analysis into tools people actually use.">Turning analysis into tools people actually use.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Scheduling & Resource Allocation">Scheduling &amp; Resource Allocation</h3><p data-i18n="Assigning limited resources where they matter most.">Assigning limited resources where they matter most.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Dynamical Systems">Dynamical Systems</h3><p data-i18n="Modeling how systems evolve and change over time.">Modeling how systems evolve and change over time.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Financial Mathematics">Financial Mathematics</h3><p data-i18n="Quantifying risk and value in financial decisions.">Quantifying risk and value in financial decisions.</p></div>
-      <div class="expertise-card"><div class="expertise-mark"></div><h3 data-i18n="Industrial Mathematics">Industrial Mathematics</h3><p data-i18n="Applying mathematics directly to industry-scale challenges.">Applying mathematics directly to industry-scale challenges.</p></div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <h3 data-i18n="service.optimization.title">بهینه‌سازی</h3>
+        <p data-i18n="service.optimization.desc">یافتن بهترین تصمیم از میان گزینه‌های ممکن.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 5 5-9"/></svg></div>
+        <h3 data-i18n="service.modeling.title">مدل‌سازی ریاضی</h3>
+        <p data-i18n="service.modeling.desc">تبدیل سامانه‌های واقعی به معادلات و ساختارهای دقیق.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg></div>
+        <h3 data-i18n="service.ai.title">هوش مصنوعی</h3>
+        <p data-i18n="service.ai.desc">یادگیری الگوها از داده‌ها برای پشتیبانی از تصمیم‌های بهتر.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
+        <h3 data-i18n="service.data.title">علم داده</h3>
+        <p data-i18n="service.data.desc">استخراج بینش قابل‌اعتماد از داده‌های واقعی.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4"/></svg></div>
+        <h3 data-i18n="service.simulation.title">شبیه‌سازی</h3>
+        <p data-i18n="service.simulation.desc">آزمودن سناریوها پیش از تخصیص منابع واقعی.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <h3 data-i18n="service.dss.title">سیستم‌های پشتیبان تصمیم</h3>
+        <p data-i18n="service.dss.desc">تبدیل تحلیل به ابزارهایی که واقعاً استفاده می‌شوند.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== HOW IT WORKS ===================== -->
-<section class="section on-midnight" id="how-it-works">
+<section class="section" id="projects">
   <div class="container">
     <div class="section-head">
-      <p class="eyebrow" data-i18n="How It Works">How It Works</p>
-      <h2 data-i18n="From first contact to closeout">From first contact to closeout</h2>
-      <p data-i18n="A clear, structured path — every problem is examined, classified, scoped, and resolved through the same disciplined process.">A clear, structured path — every problem is examined, classified, scoped, and resolved through the same disciplined process.</p>
+      <h2 data-i18n="projects.title">مسائلی که حل کرده‌ایم</h2>
+      <p data-i18n="projects.subtitle">بخشی از مسائل واقعی صنعت و بخش عمومی.</p>
     </div>
-    <div class="timeline">
-      <div class="timeline-step"><div class="timeline-num" data-i18n="1">1</div><h3 data-i18n="Submit Request">Submit Request</h3><p data-i18n="Describe the problem through a short online form.">Describe the problem through a short online form.</p></div>
-      <div class="timeline-step"><div class="timeline-num" data-i18n="2">2</div><h3 data-i18n="Discovery Meeting">Discovery Meeting</h3><p data-i18n="A 15–30 minute conversation to understand your objectives.">A 15–30 minute conversation to understand your objectives.</p></div>
-      <div class="timeline-step"><div class="timeline-num" data-i18n="3">3</div><h3 data-i18n="Triage">Triage</h3><p data-i18n="Classified as a quick consult, short project, long-term collaboration, or referral.">Classified as a quick consult, short project, long-term collaboration, or referral.</p></div>
-      <div class="timeline-step"><div class="timeline-num" data-i18n="4">4</div><h3 data-i18n="Scope & Agreement">Scope &amp; Agreement</h3><p data-i18n="Deliverables, timeline, confidentiality, IP, and data access defined.">Deliverables, timeline, confidentiality, IP, and data access defined.</p></div>
-      <div class="timeline-step"><div class="timeline-num" data-i18n="5">5</div><h3 data-i18n="Project Execution">Project Execution</h3><p data-i18n="An expert team works through the analysis.">An expert team works through the analysis.</p></div>
-      <div class="timeline-step"><div class="timeline-num" data-i18n="6">6</div><h3 data-i18n="Validation & Handoff">Validation &amp; Handoff</h3><p data-i18n="Reports, models, software, and recommendations delivered.">Reports, models, software, and recommendations delivered.</p></div>
-      <div class="timeline-step"><div class="timeline-num" data-i18n="7">7</div><h3 data-i18n="Closeout">Closeout</h3><p data-i18n="Feedback gathered, work archived, impact tracked.">Feedback gathered, work archived, impact tracked.</p></div>
+    <div class="projects-grid" id="featuredProjects"></div>
+    <div class="projects-more">
+      <a href="/projects" class="btn btn-outline btn-sm" data-i18n="projects.more">مشاهده پروژه‌های بیشتر</a>
     </div>
   </div>
 </section>
 
-<!-- ===================== WHO WE SERVE ===================== -->
-<section class="section">
+<section class="section on-soft" id="about">
   <div class="container">
-    <div class="section-head">
-      <p class="eyebrow on-light" data-i18n="Who We Serve">Who We Serve</p>
-      <h2 data-i18n="Built for academia, industry, and government alike">Built for academia, industry, and government alike</h2>
-    </div>
-    <div class="serve-grid">
-      <div class="serve-card">
-        <h3 data-i18n="Academic Collaboration">Academic Collaboration</h3>
-        <p data-i18n="Cross-department partnerships that bring mathematical depth to research already underway.">Cross-department partnerships that bring mathematical depth to research already underway.</p>
-        <div class="tag-row"><span class="tag" data-i18n="Faculty">Faculty</span><span class="tag" data-i18n="Researchers">Researchers</span><span class="tag" data-i18n="Graduate Students">Graduate Students</span><span class="tag" data-i18n="Departments">Departments</span></div>
+    <div class="about-grid">
+      <div class="about-lead">
+        <p data-i18n="about.preview" data-admin-key="about.lead">مرکز حل مسئله یک مرکز پژوهشی مستقل است که بخش‌های پیچیده محاسباتی یک پروژه صنعتی را به یک راه‌حل تبدیل می‌کند.</p>
+        <div class="about-support">
+          <div class="icon-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/></svg></div>
+          <span data-i18n="about.support">پشتیبانی دانشکده ریاضی و علوم کامپیوتر</span>
+        </div>
+        <div class="about-actions">
+          <a href="/about" class="btn btn-outline" data-i18n="about.learnMore">بیشتر بدانید</a>
+        </div>
       </div>
-      <div class="serve-card">
-        <h3 data-i18n="Industry Partnerships">Industry Partnerships</h3>
-        <p data-i18n="Applied analysis for operational, strategic, and product challenges.">Applied analysis for operational, strategic, and product challenges.</p>
-        <div class="tag-row"><span class="tag" data-i18n="Companies">Companies</span><span class="tag" data-i18n="Startups">Startups</span><span class="tag" data-i18n="Manufacturers">Manufacturers</span></div>
-      </div>
-      <div class="serve-card">
-        <h3 data-i18n="Government & Public Sector">Government &amp; Public Sector</h3>
-        <p data-i18n="Evidence-based modeling for public systems, services, and policy questions.">Evidence-based modeling for public systems, services, and policy questions.</p>
-        <div class="tag-row"><span class="tag" data-i18n="Agencies">Agencies</span><span class="tag" data-i18n="NGOs">NGOs</span><span class="tag" data-i18n="Hospitals">Hospitals</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== EXAMPLE PROBLEMS ===================== -->
-<section class="section on-silver">
-  <div class="container">
-    <div class="section-head">
-      <p class="eyebrow on-light" data-i18n="Example Problems">Example Problems</p>
-      <h2 data-i18n="The kind of questions we take on">The kind of questions we take on</h2>
-    </div>
-    <div class="problem-chips">
-      <div class="problem-chip" data-i18n="Hospital shift scheduling">Hospital shift scheduling</div>
-      <div class="problem-chip" data-i18n="Transportation optimization">Transportation optimization</div>
-      <div class="problem-chip" data-i18n="Resource allocation">Resource allocation</div>
-      <div class="problem-chip" data-i18n="Demand forecasting">Demand forecasting</div>
-      <div class="problem-chip" data-i18n="Epidemiological modeling">Epidemiological modeling</div>
-      <div class="problem-chip" data-i18n="Environmental simulation">Environmental simulation</div>
-      <div class="problem-chip" data-i18n="Manufacturing optimization">Manufacturing optimization</div>
-      <div class="problem-chip" data-i18n="Financial risk analysis">Financial risk analysis</div>
-      <div class="problem-chip" data-i18n="Research data analysis">Research data analysis</div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== CASE STUDIES ===================== -->
-<section class="section" id="case-studies">
-  <div class="container">
-    <div class="section-head">
-      <p class="eyebrow on-light" data-i18n="Case Studies">Case Studies</p>
-      <h2 data-i18n="Representative project concepts">Representative project concepts</h2>
-      <p data-i18n="The Center is newly established — these are illustrative project types we are built to take on, not a record of completed engagements yet.">The Center is newly established — these are illustrative project types we are built to take on, not a record of completed engagements yet.</p>
-    </div>
-    <div class="case-grid">
-      <div class="case-card">
-        <span class="case-tag" data-i18n="Healthcare">Healthcare</span>
-        <h3 data-i18n="Hospital Scheduling Optimization">Hospital Scheduling Optimization</h3>
-        <p data-i18n="Balancing staff availability, shift fairness, and patient coverage using constraint-based optimization.">Balancing staff availability, shift fairness, and patient coverage using constraint-based optimization.</p>
-        <span class="pill" data-i18n="Concept">Concept</span>
-      </div>
-      <div class="case-card">
-        <span class="case-tag" data-i18n="Higher Education">Higher Education</span>
-        <h3 data-i18n="University Timetable Optimization">University Timetable Optimization</h3>
-        <p data-i18n="Generating conflict-free, room-efficient course schedules across departments.">Generating conflict-free, room-efficient course schedules across departments.</p>
-        <span class="pill" data-i18n="Concept">Concept</span>
-      </div>
-      <div class="case-card">
-        <span class="case-tag" data-i18n="Environment">Environment</span>
-        <h3 data-i18n="Water Resource Modeling">Water Resource Modeling</h3>
-        <p data-i18n="Simulating supply, demand, and distribution under varying climate scenarios.">Simulating supply, demand, and distribution under varying climate scenarios.</p>
-        <span class="pill" data-i18n="Concept">Concept</span>
-      </div>
-      <div class="case-card">
-        <span class="case-tag" data-i18n="Logistics">Logistics</span>
-        <h3 data-i18n="Supply Chain Simulation">Supply Chain Simulation</h3>
-        <p data-i18n="Stress-testing distribution networks against disruption and demand volatility.">Stress-testing distribution networks against disruption and demand volatility.</p>
-        <span class="pill" data-i18n="Concept">Concept</span>
-      </div>
-      <div class="case-card">
-        <span class="case-tag" data-i18n="Healthcare · AI">Healthcare · AI</span>
-        <h3 data-i18n="AI for Healthcare">AI for Healthcare</h3>
-        <p data-i18n="Predictive models supporting triage, diagnosis support, and capacity planning.">Predictive models supporting triage, diagnosis support, and capacity planning.</p>
-        <span class="pill" data-i18n="Concept">Concept</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== WHY MATH ===================== -->
-<section class="section on-midnight quote-section">
-  <div class="container">
-    <blockquote>
-      <span data-i18n="Behind every healthcare system, transportation network, supply chain, financial market, and scientific discovery lies a mathematical structure waiting to be understood.">Behind every healthcare system, transportation network, supply chain, financial market, and scientific discovery lies a mathematical structure waiting to be understood.</span>
-      <cite data-i18n="We exist to reveal that structure — and turn it into better decisions.">We exist to reveal that structure — and turn it into better decisions.</cite>
-    </blockquote>
-  </div>
-</section>
-
-<!-- ===================== STATUS ===================== -->
-<section class="section tight">
-  <div class="container">
-    <div class="status-row">
-      <div class="status-cell"><div class="dot"></div><span data-i18n="University Supported" data-admin-key="status.1">University Supported</span></div>
-      <div class="status-cell"><div class="dot"></div><span data-i18n="Interdisciplinary Team" data-admin-key="status.2">Interdisciplinary Team</span></div>
-      <div class="status-cell"><div class="dot"></div><span data-i18n="Research Driven" data-admin-key="status.3">Research Driven</span></div>
-      <div class="status-cell"><div class="dot"></div><span data-i18n="Launching 2026" data-admin-key="status.4">Launching 2026</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== TEAM ===================== -->
-<section class="section on-silver" id="team">
-  <div class="container">
-    <div class="section-head">
-      <p class="eyebrow on-light" data-i18n="Team">Team</p>
-      <h2 data-i18n="Who you'll work with">Who you'll work with</h2>
-      <p data-i18n="Names to follow as the Center's roster is finalized — the structure below reflects how every engagement is staffed.">Names to follow as the Center's roster is finalized — the structure below reflects how every engagement is staffed.</p>
-    </div>
-    <div class="team-grid">
-      <div class="team-card">
-        <span class="team-role" data-i18n="Director">Director</span>
-        <h3 data-i18n="Name to be announced" data-admin-key="team.director.name">Name to be announced</h3>
-        <div class="tag-row"><span class="tag" data-i18n="Leadership">Leadership</span><span class="tag" data-i18n="Strategy">Strategy</span></div>
-      </div>
-      <div class="team-card">
-        <span class="team-role" data-i18n="Faculty Consultants">Faculty Consultants</span>
-        <h3 data-i18n="Roster in formation" data-admin-key="team.faculty.status">Roster in formation</h3>
-        <div class="tag-row"><span class="tag" data-i18n="Optimization">Optimization</span><span class="tag" data-i18n="Statistics">Statistics</span><span class="tag" data-i18n="Numerical Analysis">Numerical Analysis</span></div>
-      </div>
-      <div class="team-card">
-        <span class="team-role" data-i18n="Graduate Researchers">Graduate Researchers</span>
-        <h3 data-i18n="Roster in formation" data-admin-key="team.graduate.status">Roster in formation</h3>
-        <div class="tag-row"><span class="tag" data-i18n="Computational Math">Computational Math</span><span class="tag" data-i18n="AI">AI</span></div>
-      </div>
-      <div class="team-card">
-        <span class="team-role" data-i18n="Student Fellows">Student Fellows</span>
-        <h3 data-i18n="Applications opening soon" data-admin-key="team.student.status">Applications opening soon</h3>
-        <div class="tag-row"><span class="tag" data-i18n="Operations Research">Operations Research</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== SUBMIT / INTAKE FORM ===================== -->
-<section class="section" id="submit">
-  <div class="container">
-    <div class="form-wrap">
-      <div class="form-side">
-        <p class="eyebrow on-light" data-i18n="Submit a Problem">Submit a Problem</p>
-        <h2 data-i18n="Tell us what you're working on">Tell us what you're working on</h2>
-        <p data-i18n="The most important step toward a solution is understanding the problem correctly. This goes to our intake team — expect a reply within a few business days.">The most important step toward a solution is understanding the problem correctly. This goes to our intake team — expect a reply within a few business days.</p>
-        <ul class="form-list">
-          <li><span data-i18n="Response time">Response time</span><span data-i18n="2–3 business days">2–3 business days</span></li>
-          <li><span data-i18n="Discovery call">Discovery call</span><span data-i18n="15–30 minutes">15–30 minutes</span></li>
-          <li><span data-i18n="Confidentiality">Confidentiality</span><span data-i18n="NDA available on request">NDA available on request</span></li>
-        </ul>
-      </div>
-
-      <div>
-        <form id="intakeForm">
-          <div class="field-row">
-            <div class="field-group">
-              <label for="name" data-i18n="Name">Name</label>
-              <input type="text" id="name" required>
-            </div>
-            <div class="field-group">
-              <label for="org" data-i18n="Organization / Department">Organization / Department</label>
-              <input type="text" id="org" required>
-            </div>
-          </div>
-          <div class="field-row">
-            <div class="field-group">
-              <label for="email" data-i18n="Email">Email</label>
-              <input type="email" id="email" required>
-            </div>
-            <div class="field-group">
-              <label for="phone" data-i18n="Phone (optional)">Phone (optional)</label>
-              <input type="tel" id="phone">
-            </div>
-          </div>
-          <div class="field-group">
-            <label for="problem" data-i18n="Problem Description">Problem Description</label>
-            <textarea id="problem" required data-i18n-placeholder="What are you trying to solve?" placeholder="What are you trying to solve?"></textarea>
-          </div>
-          <div class="field-group">
-            <label for="outcome" data-i18n="Desired Outcome">Desired Outcome</label>
-            <textarea id="outcome" data-i18n-placeholder="What would a good result look like?" placeholder="What would a good result look like?"></textarea>
-          </div>
-          <div class="field-row">
-            <div class="field-group">
-              <label for="timeline" data-i18n="Timeline">Timeline</label>
-              <select id="timeline">
-                <option data-i18n="Flexible">Flexible</option>
-                <option data-i18n="Within 1 month">Within 1 month</option>
-                <option data-i18n="1–3 months">1–3 months</option>
-                <option data-i18n="3+ months">3+ months</option>
-              </select>
-            </div>
-            <div class="field-group">
-              <label for="support" data-i18n="Type of Support Requested">Type of Support Requested</label>
-              <select id="support">
-                <option data-i18n="Quick consultation">Quick consultation</option>
-                <option data-i18n="Short project">Short project</option>
-                <option data-i18n="Long-term collaboration">Long-term collaboration</option>
-                <option data-i18n="Not sure yet">Not sure yet</option>
-              </select>
-            </div>
-          </div>
-          <div class="field-group">
-            <label for="data" data-i18n="Available Data">Available Data</label>
-            <input type="text" id="data" data-i18n-placeholder="e.g. spreadsheets, sensor logs, none yet" placeholder="e.g. spreadsheets, sensor logs, none yet">
-          </div>
-          <div class="field-group">
-            <label for="confidentiality" data-i18n="Confidentiality Requirements">Confidentiality Requirements</label>
-            <input type="text" id="confidentiality" data-i18n-placeholder="e.g. NDA required, public research, no restrictions" placeholder="e.g. NDA required, public research, no restrictions">
-          </div>
-          <button type="submit" class="btn btn-primary" style="width:100%; margin-top:6px;" data-i18n="Submit Project Request">Submit Project Request</button>
-        </form>
-        <div class="form-success" id="formSuccess">
-          <strong data-i18n="Request received.">Request received.</strong>
-          <span data-i18n="Thank you — our intake team will follow up by email within 2–3 business days.">Thank you — our intake team will follow up by email within 2–3 business days.</span>
+      <div class="about-features">
+        <div class="about-feature reveal">
+          <div class="icon-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+          <span data-i18n="about.research">مبتنی بر پژوهش</span>
+        </div>
+        <div class="about-feature reveal">
+          <div class="icon-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
+          <span data-i18n="about.team">تیم میان‌رشته‌ای</span>
+        </div>
+        <div class="about-feature reveal">
+          <div class="icon-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+          <span data-i18n="about.confidential">محرمانگی اطلاعات</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== FINAL CTA ===================== -->
-<section class="section on-midnight final-cta" id="contact">
-  <div class="container">
-    <p class="eyebrow" data-i18n="Get in Touch">Get in Touch</p>
-    <h2 data-i18n="Have a challenging problem?" data-admin-key="cta.heading">Have a challenging problem?</h2>
-    <p data-i18n="The most important step toward a solution is understanding the problem correctly." data-admin-key="cta.text">The most important step toward a solution is understanding the problem correctly.</p>
-    <div class="hero-actions">
-      <a href="#submit" class="btn btn-primary" data-i18n="Submit Project Request">Submit Project Request</a>
-      <a href="mailto:contact@psc.edu" class="btn btn-ghost-dark" data-i18n="Contact Our Team" data-admin-href-key="contact.email" data-admin-href-prefix="mailto:">Contact Our Team</a>
+<section class="section cta-dark" id="cta">
+  <div class="container cta-inner">
+    <h2 data-i18n="cta.title" data-admin-key="cta.heading">مسئله خود را برای ما شرح دهید.</h2>
+    <p data-i18n="cta.text" data-admin-key="cta.text">ظرف ۵ روز کاری جهت تشکیل جلسه اولیه با شما تماس می‌گیریم.</p>
+    <div class="cta-details">
+      <div class="cta-detail">
+        <div class="icon-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+        <div>
+          <span class="cta-detail-label" data-i18n="cta.email">ایمیل</span>
+          <a href="mailto:psc@aut.ac.ir" data-bidi-isolate data-admin-key="contact.emailValue" data-admin-href-key="contact.emailValue" data-admin-href-prefix="mailto:" data-i18n="contact.emailValue">psc@aut.ac.ir</a>
+        </div>
+      </div>
+      <div class="cta-detail">
+        <div class="icon-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div>
+          <span class="cta-detail-label" data-i18n="cta.location">آدرس</span>
+          <span data-i18n="cta.address">دانشگاه صنعتی امیرکبیر، دانشکده ریاضی و علوم کامپیوتر، مرکز حل مسئله</span>
+        </div>
+      </div>
     </div>
+    <a href="/contact" class="btn btn-primary" data-i18n="cta.submit">ارسال مسئله</a>
   </div>
 </section>
 
+<div data-component="footer"></div>
 
-<!-- ===================== WILD SCREEN IMAGE ===================== -->
-<section class="page-art" aria-hidden="true">
-  <img src="/images/wild-screen-art.png" alt="" />
-</section>
-
-
-<!-- ===================== FOOTER ===================== -->
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <p class="wordmark" style="margin-bottom:14px;">PS<span>C</span></p>
-        <p style="font-size:13.5px; max-width:280px;" data-i18n="A university-backed center translating complex problems into mathematical and computational solutions." data-admin-key="footer.tagline">A university-backed center translating complex problems into mathematical and computational solutions.</p>
-      </div>
-      <div>
-        <h4 data-i18n="Center">Center</h4>
-        <ul>
-          <li><a href="#what-we-do" data-i18n="About">About</a></li>
-          <li><a href="#how-it-works" data-i18n="Services">Services</a></li>
-          <li><a href="#team" data-i18n="Team">Team</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 data-i18n="Work">Work</h4>
-        <ul>
-          <li><a href="#case-studies" data-i18n="Case Studies">Case Studies</a></li>
-          <li><a href="#submit" data-i18n="Submit a Problem">Submit a Problem</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 data-i18n="Contact">Contact</h4>
-        <ul>
-          <li><a href="mailto:contact@psc.edu" data-admin-key="contact.email" data-admin-href-key="contact.email" data-admin-href-prefix="mailto:">contact@psc.edu</a></li>
-          <li><a href="#contact" data-i18n="Schedule a call">Schedule a call</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© <span id="year"></span> <span data-i18n="Problem Solving Center · Department of Mathematics">Problem Solving Center · Department of Mathematics</span></span>
-      <span data-i18n="Scope & Policies · Data Governance · Confidentiality">Scope &amp; Policies · Data Governance · Confidentiality</span>
-    </div>
-  </div>
-</footer>
-
-<script src="/js/i18n.js" defer></script>
-<script src="/js/content-loader.js" defer></script>
-<script src="/js/ui.js" defer></script>
-<script src="/js/reveal.js" defer></script>
-<script src="/js/intake-form.js" defer></script>
+<script type="module" src="/js/app.js"></script>
+<script type="module" src="/js/pages/home.js"></script>
+<script type="module" src="/js/reveal.js"></script>
 </body>
 </html>
