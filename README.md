@@ -122,3 +122,30 @@ scripts/
 
 server.js                    — Express entry point (sessions, static files, API routes)
 ```
+
+## Running with Docker
+
+1. Create your production environment file:
+   ```bash
+   cp .env.example .env
+   ```
+2. Set `ADMIN_USERNAME`, `ADMIN_PASSWORD_HASH`, and a strong `SESSION_SECRET` in `.env`.
+3. Build and start the container:
+   ```bash
+   docker compose up -d --build
+   ```
+4. Open:
+   - http://localhost:3000
+   - http://localhost:3000/admin
+
+The `data/` directory is mounted as a volume so submissions and admin-edited content survive container rebuilds and restarts.
+
+To stop it:
+```bash
+docker compose down
+```
+
+To view logs:
+```bash
+docker compose logs -f psc
+```
